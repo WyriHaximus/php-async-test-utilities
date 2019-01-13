@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "8ad8b197d51684d7768b9cf50eec0040",
+    "content-hash": "6cc6220d1e7f6cbc21ae3d4402015be7",
     "packages": [
         {
             "name": "api-clients/cs-fixer-config",
@@ -737,16 +737,16 @@
         },
         {
             "name": "infection/infection",
-            "version": "0.11.4",
+            "version": "0.11.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/infection/infection.git",
-                "reference": "f71d7af4332e0c3760aab45c16a6f750db1475a6"
+                "reference": "20c87babc55e7b49bf2b8410fc1dd1fa87177824"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/infection/infection/zipball/f71d7af4332e0c3760aab45c16a6f750db1475a6",
-                "reference": "f71d7af4332e0c3760aab45c16a6f750db1475a6",
+                "url": "https://api.github.com/repos/infection/infection/zipball/20c87babc55e7b49bf2b8410fc1dd1fa87177824",
+                "reference": "20c87babc55e7b49bf2b8410fc1dd1fa87177824",
                 "shasum": ""
             },
             "require": {
@@ -823,7 +823,7 @@
                 "testing",
                 "unit testing"
             ],
-            "time": "2018-12-09T15:26:00+00:00"
+            "time": "2019-01-13T06:56:41+00:00"
         },
         {
             "name": "jakub-onderka/php-console-color",
@@ -1824,16 +1824,16 @@
         },
         {
             "name": "nikic/php-parser",
-            "version": "v4.1.1",
+            "version": "v4.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nikic/PHP-Parser.git",
-                "reference": "8aae5b59b83bb4d0dbf07b0a835f2680a658f610"
+                "reference": "594bcae1fc0bccd3993d2f0d61a018e26ac2865a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nikic/PHP-Parser/zipball/8aae5b59b83bb4d0dbf07b0a835f2680a658f610",
-                "reference": "8aae5b59b83bb4d0dbf07b0a835f2680a658f610",
+                "url": "https://api.github.com/repos/nikic/PHP-Parser/zipball/594bcae1fc0bccd3993d2f0d61a018e26ac2865a",
+                "reference": "594bcae1fc0bccd3993d2f0d61a018e26ac2865a",
                 "shasum": ""
             },
             "require": {
@@ -1849,7 +1849,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "4.1-dev"
+                    "dev-master": "4.2-dev"
                 }
             },
             "autoload": {
@@ -1871,7 +1871,7 @@
                 "parser",
                 "php"
             ],
-            "time": "2018-12-26T11:32:39+00:00"
+            "time": "2019-01-12T16:31:37+00:00"
         },
         {
             "name": "nunomaduro/collision",
@@ -4750,12 +4750,60 @@
                 "validate"
             ],
             "time": "2018-12-25T11:19:39+00:00"
+        },
+        {
+            "name": "wyrihaximus/test-utilities",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/WyriHaximus/php-test-utilities.git",
+                "reference": "ba9dfba85c494e1fa1b58d56ea8fa0beb292a4eb"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/WyriHaximus/php-test-utilities/zipball/ba9dfba85c494e1fa1b58d56ea8fa0beb292a4eb",
+                "reference": "ba9dfba85c494e1fa1b58d56ea8fa0beb292a4eb",
+                "shasum": ""
+            },
+            "require": {
+                "api-clients/cs-fixer-config": "^1.1.1",
+                "composer/composer": "^1.8",
+                "friendsofphp/php-cs-fixer": "^2.14",
+                "infection/infection": "^0.11.4",
+                "jakub-onderka/php-console-highlighter": "^0.4",
+                "jakub-onderka/php-parallel-lint": "^1.0.0",
+                "localheinz/composer-normalize": "^1.0.0",
+                "nunomaduro/collision": "^2.1",
+                "php": "^7.2",
+                "phpstan/phpstan": "^0.10.7",
+                "phpunit/phpunit": "^7.5"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "WyriHaximus\\TestUtilities\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Cees-Jan Kiewiet",
+                    "email": "ceesjank@gmail.com"
+                }
+            ],
+            "description": "Test utilities for api-clients packages",
+            "time": "2019-01-13T21:03:33+00:00"
         }
     ],
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {
+        "wyrihaximus/test-utilities": 20
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
