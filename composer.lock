@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "6cc6220d1e7f6cbc21ae3d4402015be7",
+    "content-hash": "e9c190e809dd7e8f55edcac2e918b2af",
     "packages": [
         {
             "name": "api-clients/cs-fixer-config",
@@ -4752,21 +4752,63 @@
             "time": "2018-12-25T11:19:39+00:00"
         },
         {
-            "name": "wyrihaximus/test-utilities",
-            "version": "dev-master",
+            "name": "wyrihaximus/cs-fixer-config",
+            "version": "1.0.1",
             "source": {
                 "type": "git",
-                "url": "https://github.com/WyriHaximus/php-test-utilities.git",
-                "reference": "ba9dfba85c494e1fa1b58d56ea8fa0beb292a4eb"
+                "url": "https://github.com/WyriHaximus/php-cs-fixer-config.git",
+                "reference": "a36a4f35c8b499252518ec6094a1de5f010fc999"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/WyriHaximus/php-test-utilities/zipball/ba9dfba85c494e1fa1b58d56ea8fa0beb292a4eb",
-                "reference": "ba9dfba85c494e1fa1b58d56ea8fa0beb292a4eb",
+                "url": "https://api.github.com/repos/WyriHaximus/php-cs-fixer-config/zipball/a36a4f35c8b499252518ec6094a1de5f010fc999",
+                "reference": "a36a4f35c8b499252518ec6094a1de5f010fc999",
                 "shasum": ""
             },
             "require": {
-                "api-clients/cs-fixer-config": "^1.1.1",
+                "friendsofphp/php-cs-fixer": "^2.14",
+                "php": "^7.2"
+            },
+            "require-dev": {
+                "wyrihaximus/test-utilities": "^1.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "WyriHaximus\\CsFixerConfig\\": "src/"
+                },
+                "files": [
+                    "src/rules_include.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Cees-Jan Kiewiet",
+                    "email": "ceesjank@gmail.com"
+                }
+            ],
+            "description": "friendsofphp/php-cs-fixer config",
+            "time": "2019-01-20T17:38:15+00:00"
+        },
+        {
+            "name": "wyrihaximus/test-utilities",
+            "version": "1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/WyriHaximus/php-test-utilities.git",
+                "reference": "d292de1799f96de76c794a516ab13b19057d2e9a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/WyriHaximus/php-test-utilities/zipball/d292de1799f96de76c794a516ab13b19057d2e9a",
+                "reference": "d292de1799f96de76c794a516ab13b19057d2e9a",
+                "shasum": ""
+            },
+            "require": {
                 "composer/composer": "^1.8",
                 "friendsofphp/php-cs-fixer": "^2.14",
                 "infection/infection": "^0.11.4",
@@ -4775,8 +4817,9 @@
                 "localheinz/composer-normalize": "^1.0.0",
                 "nunomaduro/collision": "^2.1",
                 "php": "^7.2",
-                "phpstan/phpstan": "^0.10.7",
-                "phpunit/phpunit": "^7.5"
+                "phpstan/phpstan": "^0.10.7 || ^0.11.0",
+                "phpunit/phpunit": "^7.5",
+                "wyrihaximus/cs-fixer-config": "^1.0.1"
             },
             "type": "library",
             "autoload": {
@@ -4795,15 +4838,13 @@
                 }
             ],
             "description": "Test utilities for api-clients packages",
-            "time": "2019-01-13T21:03:33+00:00"
+            "time": "2019-01-20T17:45:21+00:00"
         }
     ],
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": {
-        "wyrihaximus/test-utilities": 20
-    },
+    "stability-flags": [],
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {

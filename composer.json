@@ -10,9 +10,9 @@
   ],
   "require": {
     "php": "^7.2",
-    "api-clients/cs-fixer-config": "^1.1.1",
     "clue/block-react": "^1.3",
-    "wyrihaximus/test-utilities": "dev-master"
+    "wyrihaximus/cs-fixer-config": "^1.0.1",
+    "wyrihaximus/test-utilities": "^1.0.1"
   },
   "require-dev": {},
   "config": {
