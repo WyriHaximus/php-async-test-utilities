@@ -12,7 +12,7 @@
     "php": "^7.2",
     "clue/block-react": "^1.3",
     "wyrihaximus/cs-fixer-config": "^1.0.1",
-    "wyrihaximus/test-utilities": "^1.0.1"
+    "wyrihaximus/test-utilities": "^1.2.1"
   },
   "require-dev": {},
   "config": {
@@ -98,7 +98,7 @@
     ],
     "stan": [
       "@ensure-installed",
-      "phpstan analyse src tests --level max --ansi"
+      "phpstan analyse src tests --level max --ansi -c phpstan.neon"
     ],
     "unit": [
       "@ensure-installed",
