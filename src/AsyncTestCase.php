@@ -7,12 +7,20 @@ use function Clue\React\Block\awaitAll;
 use function Clue\React\Block\awaitAny;
 use React\EventLoop\Factory;
 use React\EventLoop\LoopInterface;
+use React\EventLoop\StreamSelectLoop;
 use React\Promise\PromiseInterface;
 use WyriHaximus\TestUtilities\TestCase;
 
 abstract class AsyncTestCase extends TestCase
 {
     public const DEFAULT_AWAIT_TIMEOUT = 60.0;
+
+    public function provideEventLoop()
+    {
+        yield [null];
+        yield [Factory::create()];
+        yield [new StreamSelectLoop()];
+    }
 
     /**
      * @param  PromiseInterface   $promise
