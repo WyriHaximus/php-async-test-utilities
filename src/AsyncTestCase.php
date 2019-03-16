@@ -17,9 +17,10 @@ abstract class AsyncTestCase extends TestCase
     /**
      * @param  PromiseInterface   $promise
      * @param  LoopInterface|null $loop
+     * @param  float|null         $timeout
      * @return mixed
      */
-    protected function await(PromiseInterface $promise, LoopInterface $loop = null, float $timeout = self::DEFAULT_AWAIT_TIMEOUT)
+    protected function await(PromiseInterface $promise, ?LoopInterface $loop = null, ?float $timeout = self::DEFAULT_AWAIT_TIMEOUT)
     {
         if (!($loop instanceof LoopInterface)) {
             $loop = Factory::create();
@@ -31,9 +32,10 @@ abstract class AsyncTestCase extends TestCase
     /**
      * @param  array              $promises
      * @param  LoopInterface|null $loop
+     * @param  float|null         $timeout
      * @return array
      */
-    protected function awaitAll(array $promises, LoopInterface $loop = null, float $timeout = self::DEFAULT_AWAIT_TIMEOUT)
+    protected function awaitAll(array $promises, ?LoopInterface $loop = null, ?float $timeout = self::DEFAULT_AWAIT_TIMEOUT): array
     {
         if (!($loop instanceof LoopInterface)) {
             $loop = Factory::create();
@@ -45,9 +47,10 @@ abstract class AsyncTestCase extends TestCase
     /**
      * @param  array              $promises
      * @param  LoopInterface|null $loop
+     * @param  float|null         $timeout
      * @return mixed
      */
-    protected function awaitAny(array $promises, LoopInterface $loop = null, float $timeout = self::DEFAULT_AWAIT_TIMEOUT)
+    protected function awaitAny(array $promises, ?LoopInterface $loop = null, ?float $timeout = self::DEFAULT_AWAIT_TIMEOUT)
     {
         if (!($loop instanceof LoopInterface)) {
             $loop = Factory::create();

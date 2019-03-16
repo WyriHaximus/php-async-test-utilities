@@ -12,17 +12,7 @@ use function React\Promise\resolve;
 
 final class AsyncTestCaseTest extends AsyncTestCase
 {
-    protected function setUp(): void
-    {
-        parent::setUp();
-    }
-
-    protected function tearDown(): void
-    {
-        parent::tearDown();
-    }
-
-    public function provideEventLoop()
+    public function provideEventLoop(): iterable
     {
         yield [null];
         yield [Factory::create()];
@@ -32,7 +22,7 @@ final class AsyncTestCaseTest extends AsyncTestCase
     /**
      * @dataProvider provideEventLoop
      */
-    public function testAwait(LoopInterface $loop = null)
+    public function testAwait(?LoopInterface $loop): void
     {
         $value = time();
         static::assertSame($value, $this->await(resolve($value), $loop));
@@ -41,7 +31,7 @@ final class AsyncTestCaseTest extends AsyncTestCase
     /**
      * @dataProvider provideEventLoop
      */
-    public function testAwaitAll(LoopInterface $loop = null)
+    public function testAwaitAll(?LoopInterface $loop): void
     {
         $value = time();
         static::assertSame([$value, $value], $this->awaitAll([resolve($value), resolve($value)], $loop));
@@ -50,7 +40,7 @@ final class AsyncTestCaseTest extends AsyncTestCase
     /**
      * @dataProvider provideEventLoop
      */
-    public function testAwaitAny(LoopInterface $loop = null)
+    public function testAwaitAny(?LoopInterface $loop): void
     {
         $value = time();
         static::assertSame($value, $this->awaitAny([resolve($value), resolve($value)], $loop));
@@ -59,7 +49,7 @@ final class AsyncTestCaseTest extends AsyncTestCase
     /**
      * @dataProvider provideEventLoop
      */
-    public function testAwaitTimeout(LoopInterface $loop = null)
+    public function testAwaitTimeout(?LoopInterface $loop): void
     {
         self::expectException(TimeoutException::class);
 
