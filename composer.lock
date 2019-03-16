@@ -1,10 +1,10 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "e9c190e809dd7e8f55edcac2e918b2af",
+    "content-hash": "37bff7bf8820b6946ea49b8acc628d15",
     "packages": [
         {
             "name": "api-clients/cs-fixer-config",
@@ -5397,16 +5397,16 @@
         },
         {
             "name": "wyrihaximus/test-utilities",
-            "version": "1.2.0",
+            "version": "1.2.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/WyriHaximus/php-test-utilities.git",
-                "reference": "62c36e1712bd2aff88e68447687df6a7291b6613"
+                "reference": "a399b8578fe49cc0e789361a49a6cb3efa5479cb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/WyriHaximus/php-test-utilities/zipball/62c36e1712bd2aff88e68447687df6a7291b6613",
-                "reference": "62c36e1712bd2aff88e68447687df6a7291b6613",
+                "url": "https://api.github.com/repos/WyriHaximus/php-test-utilities/zipball/a399b8578fe49cc0e789361a49a6cb3efa5479cb",
+                "reference": "a399b8578fe49cc0e789361a49a6cb3efa5479cb",
                 "shasum": ""
             },
             "require": {
@@ -5440,7 +5440,7 @@
                 }
             ],
             "description": "Test utilities for api-clients packages",
-            "time": "2019-03-16T15:25:03+00:00"
+            "time": "2019-03-16T16:09:45+00:00"
         }
     ],
     "packages-dev": [],
