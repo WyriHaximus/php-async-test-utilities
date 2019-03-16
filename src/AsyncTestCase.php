@@ -12,7 +12,7 @@ use WyriHaximus\TestUtilities\TestCase;
 
 abstract class AsyncTestCase extends TestCase
 {
-    const DEFAULT_AWAIT_TIMEOUT = 60;
+    public const DEFAULT_AWAIT_TIMEOUT = 60.0;
 
     /**
      * @param  PromiseInterface   $promise
