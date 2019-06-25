@@ -15,7 +15,7 @@ abstract class AsyncTestCase extends TestCase
 {
     public const DEFAULT_AWAIT_TIMEOUT = 60.0;
 
-    public function provideEventLoop()
+    public function provideEventLoop(): iterable
     {
         yield [null];
         yield [Factory::create()];
