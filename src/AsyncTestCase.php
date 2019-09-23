@@ -38,10 +38,10 @@ abstract class AsyncTestCase extends TestCase
     }
 
     /**
-     * @param  array              $promises
+     * @param  PromiseInterface[] $promises
      * @param  LoopInterface|null $loop
      * @param  float|null         $timeout
-     * @return array
+     * @return mixed[]
      */
     protected function awaitAll(array $promises, ?LoopInterface $loop = null, ?float $timeout = self::DEFAULT_AWAIT_TIMEOUT): array
     {
@@ -53,7 +53,7 @@ abstract class AsyncTestCase extends TestCase
     }
 
     /**
-     * @param  array              $promises
+     * @param  PromiseInterface[] $promises
      * @param  LoopInterface|null $loop
      * @param  float|null         $timeout
      * @return mixed
