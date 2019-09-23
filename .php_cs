@@ -1,6 +1,6 @@
 <?php declare(strict_types=1);
 
-use ApiClients\Tools\CsFixerConfig\PhpCsFixerConfig;
+use WyriHaximus\CsFixerConfig\PhpCsFixerConfig;
 
 return (function ()
 {
