@@ -50,7 +50,7 @@
     ],
     "composer-require-checker": [
       "@ensure-installed",
-      "composer-require-checker --ignore-parse-errors --ansi -vvv"
+      "composer-require-checker --ignore-parse-errors --ansi -vvv  --config-file=composer-require-checker.json"
     ],
     "cs": [
       "@ensure-installed",
