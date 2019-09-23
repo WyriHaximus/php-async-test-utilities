@@ -2,23 +2,14 @@
 
 namespace WyriHaximus\Tests\AsyncTestUtilities;
 
-use WyriHaximus\AsyncTestUtilities\AsyncTestCase;
-use React\EventLoop\Factory;
 use React\EventLoop\LoopInterface;
-use React\EventLoop\StreamSelectLoop;
 use React\Promise\Deferred;
 use React\Promise\Timer\TimeoutException;
+use WyriHaximus\AsyncTestUtilities\AsyncTestCase;
 use function React\Promise\resolve;
 
 final class AsyncTestCaseTest extends AsyncTestCase
 {
-    public function provideEventLoop(): iterable
-    {
-        yield [null];
-        yield [Factory::create()];
-        yield [new StreamSelectLoop()];
-    }
-
     /**
      * @dataProvider provideEventLoop
      */

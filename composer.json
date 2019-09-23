@@ -11,10 +11,14 @@
   "require": {
     "php": "^7.3",
     "clue/block-react": "^1.3",
+    "react/event-loop": "^1.1",
+    "react/promise": "^2.7",
     "wyrihaximus/cs-fixer-config": "^1.0.1",
     "wyrihaximus/test-utilities": "^1.2.1"
   },
-  "require-dev": {},
+  "require-dev": {
+    "wyrihaximus/iterator-or-array-to-array": "^1.1"
+  },
   "config": {
     "platform": {
       "php": "7.3"
@@ -44,6 +48,10 @@
     "ci-coverage": [
       "if [ -f ./build/logs/clover.xml ]; then wget https://scrutinizer-ci.com/ocular.phar && php ocular.phar code-coverage:upload --format=php-clover ./build/logs/clover.xml; fi"
     ],
+    "composer-require-checker": [
+      "@ensure-installed",
+      "composer-require-checker --ignore-parse-errors --ansi -vvv"
+    ],
     "cs": [
       "@ensure-installed",
       "php-cs-fixer fix --config=.php_cs --ansi --dry-run --diff --verbose --allow-risky=yes --show-progress=estimating"
@@ -55,28 +63,39 @@
     "ensure-installed": "composer install --ansi -n -q",
     "infection": [
       "@ensure-installed",
-      "infection --ansi --threads=4"
+      "infection --ansi --min-msi=100 --min-covered-msi=100 --threads=32"
     ],
     "lint-php": [
       "@ensure-installed",
       "parallel-lint --exclude vendor ."
     ],
+    "psalm": [
+      "@ensure-installed",
+      "psalm --threads=32"
+    ],
     "qa-all": [
       "composer validate --ansi",
       "composer normalize --ansi",
+      "composer unused --ansi",
       "@lint-php",
       "@cs",
       "@stan",
-      "@unit"
+      "@psalm",
+      "@unit",
+      "@infection",
+      "@composer-require-checker"
     ],
     "qa-all-extended": [
       "composer validate --ansi",
       "composer normalize --ansi",
+      "composer unused --ansi",
       "@lint-php",
       "@cs",
       "@stan",
+      "@psalm",
       "@unit-coverage",
-      "@infection"
+      "@infection",
+      "@composer-require-checker"
     ],
     "qa-ci": [
       "@unit"
@@ -89,12 +108,6 @@
     ],
     "qa-contrib": [
       "@qa-all"
-    ],
-    "qa-windows": [
-      "@lint-php",
-      "@cs",
-      "@stan",
-      "@unit"
     ],
     "stan": [
       "@ensure-installed",
