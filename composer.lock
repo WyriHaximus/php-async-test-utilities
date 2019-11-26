@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "a0193d0c21daf7a27ca1583ce8a740d1",
+    "content-hash": "fdc86285a76f6e81836d036cfaf59c7f",
     "packages": [
         {
             "name": "amphp/amp",
@@ -6258,22 +6258,22 @@
         },
         {
             "name": "wyrihaximus/test-utilities",
-            "version": "1.6.0",
+            "version": "1.6.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/WyriHaximus/php-test-utilities.git",
-                "reference": "d45254b712ccd947983acab220b31ef10292981d"
+                "reference": "27fad776a130fee02834e85788ba5b87251b2bc3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/WyriHaximus/php-test-utilities/zipball/d45254b712ccd947983acab220b31ef10292981d",
-                "reference": "d45254b712ccd947983acab220b31ef10292981d",
+                "url": "https://api.github.com/repos/WyriHaximus/php-test-utilities/zipball/27fad776a130fee02834e85788ba5b87251b2bc3",
+                "reference": "27fad776a130fee02834e85788ba5b87251b2bc3",
                 "shasum": ""
             },
             "require": {
                 "composer/composer": "^1.8",
                 "friendsofphp/php-cs-fixer": "^2.14",
-                "icanhazstring/composer-unused": "^0.6.0",
+                "icanhazstring/composer-unused": "^0.6.2",
                 "infection/infection": "^0.14.0",
                 "jakub-onderka/php-console-highlighter": "^0.4",
                 "jakub-onderka/php-parallel-lint": "^1.0.0",
@@ -6324,7 +6324,7 @@
                 }
             ],
             "description": "Test utilities for api-clients packages",
-            "time": "2019-11-26T17:48:59+00:00"
+            "time": "2019-11-26T19:03:21+00:00"
         }
     ],
     "packages-dev": [
