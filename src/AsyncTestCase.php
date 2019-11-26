@@ -5,7 +5,7 @@ namespace WyriHaximus\AsyncTestUtilities;
 use function Clue\React\Block\await;
 use function Clue\React\Block\awaitAll;
 use function Clue\React\Block\awaitAny;
-use PHPUnit\Framework\MockObject\Matcher\InvokedCount;
+use PHPUnit\Framework\MockObject\Rule\InvokedCount;
 use React\EventLoop\Factory;
 use React\EventLoop\LoopInterface;
 use React\EventLoop\StreamSelectLoop;
