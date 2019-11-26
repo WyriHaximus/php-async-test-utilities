@@ -46,4 +46,22 @@ final class AsyncTestCaseTest extends AsyncTestCase
 
         $this->await((new Deferred())->promise(), $loop, 0.1);
     }
+
+    public function testExpectCallableExactly(): void
+    {
+        $callable = $this->expectCallableExactly(3);
+        $callable();
+        $callable();
+        $callable();
+    }
+
+    public function testExpectCallableOnce(): void
+    {
+        $this->expectCallableOnce()();
+    }
+
+    public function testExpectCallableNever(): void
+    {
+        $this->expectCallableNever();
+    }
 }
