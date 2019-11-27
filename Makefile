@@ -10,9 +10,6 @@ ci:
 ci-extended:
 	composer run-script qa-ci-extended --timeout=0
 
-ci-windows:
-	composer run-script qa-ci-windows --timeout=0
-
 contrib:
 	composer run-script qa-contrib --timeout=0
 
@@ -42,6 +39,3 @@ unit-coverage:
 
 ci-coverage: init
 	composer ci-coverage
-
-generate-test-resources: init
-	./api-client-resource-generator ./tests/yaml/* ./tests/resources-src/ ./tests/resources-tests
