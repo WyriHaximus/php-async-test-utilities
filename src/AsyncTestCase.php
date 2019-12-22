@@ -2,23 +2,28 @@
 
 namespace WyriHaximus\AsyncTestUtilities;
 
-use function Clue\React\Block\await;
-use function Clue\React\Block\awaitAll;
-use function Clue\React\Block\awaitAny;
+use Generator;
 use PHPUnit\Framework\MockObject\Rule\InvokedCount;
 use React\EventLoop\Factory;
 use React\EventLoop\LoopInterface;
 use React\EventLoop\StreamSelectLoop;
 use React\Promise\PromiseInterface;
 use WyriHaximus\TestUtilities\TestCase;
+use function Clue\React\Block\await;
+use function Clue\React\Block\awaitAll;
+use function Clue\React\Block\awaitAny;
+use function spl_object_hash;
 
 abstract class AsyncTestCase extends TestCase
 {
-    public const DEFAULT_AWAIT_TIMEOUT = 60.0;
+    public const DEFAULT_AWAIT_TIMEOUT = 6.0;
 
     private const INVOKE_ARRAY = ['__invoke'];
 
-    public function provideEventLoop(): iterable
+    /**
+     * @return Generator<array<int, LoopInterface|StreamSelectLoop|null>>
+     */
+    final public function provideEventLoop(): Generator
     {
         yield [null];
         yield [Factory::create()];
@@ -26,14 +31,15 @@ abstract class AsyncTestCase extends TestCase
     }
 
     /**
-     * @param  PromiseInterface   $promise
-     * @param  LoopInterface|null $loop
-     * @param  float|null         $timeout
-     * @return mixed
+     * @return mixed returns whatever the promise resolves to
+     *
+     * @psalm-suppress MissingReturnType
+     *
+     * @codingStandardsIgnoreStart
      */
-    protected function await(PromiseInterface $promise, ?LoopInterface $loop = null, ?float $timeout = self::DEFAULT_AWAIT_TIMEOUT)
+    final protected function await(PromiseInterface $promise, ?LoopInterface $loop = null, ?float $timeout = self::DEFAULT_AWAIT_TIMEOUT)
     {
-        if (!($loop instanceof LoopInterface)) {
+        if (! ($loop instanceof LoopInterface)) {
             $loop = Factory::create();
         }
 
@@ -42,13 +48,12 @@ abstract class AsyncTestCase extends TestCase
 
     /**
      * @param  PromiseInterface[] $promises
-     * @param  LoopInterface|null $loop
-     * @param  float|null         $timeout
+     *
      * @return mixed[]
      */
-    protected function awaitAll(array $promises, ?LoopInterface $loop = null, ?float $timeout = self::DEFAULT_AWAIT_TIMEOUT): array
+    final protected function awaitAll(array $promises, ?LoopInterface $loop = null, ?float $timeout = self::DEFAULT_AWAIT_TIMEOUT): array
     {
-        if (!($loop instanceof LoopInterface)) {
+        if (! ($loop instanceof LoopInterface)) {
             $loop = Factory::create();
         }
 
@@ -57,34 +62,38 @@ abstract class AsyncTestCase extends TestCase
 
     /**
      * @param  PromiseInterface[] $promises
-     * @param  LoopInterface|null $loop
-     * @param  float|null         $timeout
+     *
      * @return mixed
+     *
+     * @psalm-suppress MissingReturnType
+     *
+     * @codingStandardsIgnoreStart
      */
-    protected function awaitAny(array $promises, ?LoopInterface $loop = null, ?float $timeout = self::DEFAULT_AWAIT_TIMEOUT)
+    final protected function awaitAny(array $promises, ?LoopInterface $loop = null, ?float $timeout = self::DEFAULT_AWAIT_TIMEOUT)
     {
-        if (!($loop instanceof LoopInterface)) {
+        if (! ($loop instanceof LoopInterface)) {
             $loop = Factory::create();
         }
 
         return awaitAny($promises, $loop, $timeout);
     }
 
-    protected function expectCallableExactly(int $amount): callable
+    final protected function expectCallableExactly(int $amount): callable
     {
         return $this->getCallableMock(self::exactly($amount));
     }
 
-    protected function expectCallableOnce(): callable
+    final protected function expectCallableOnce(): callable
     {
         return $this->getCallableMock(self::once());
     }
 
-    protected function expectCallableNever(): callable
+    final protected function expectCallableNever(): callable
     {
         return $this->getCallableMock(self::never());
     }
 
+    /** @psalm-suppress InvalidReturnType */
     private function getCallableMock(InvokedCount $invokedCount): callable
     {
         $mock = $this->getMockBuilder(CallableStub::class)->onlyMethods(self::INVOKE_ARRAY)->getMock();
@@ -95,14 +104,11 @@ abstract class AsyncTestCase extends TestCase
 
         /**
          * Trick to keep infection from dropping the above line.
-         *
-         * @var string $id
          */
-        $id = \spl_object_hash($method);
+        $id = spl_object_hash($method);
+        $di = $id;
 
-        /** @var callable $mock */
-        $mock = $mock;
-
+        /** @psalm-suppress InvalidReturnStatement */
         return $mock;
     }
 }

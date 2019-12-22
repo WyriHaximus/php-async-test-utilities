@@ -1,18 +1,18 @@
 # Test utilities
 
-[![Build Status](https://travis-ci.org/WyriHaximus/php-async-test-utilities.svg?branch=master)](https://travis-ci.org/WyriHaximus/php-async-test-utilities)
-[![Latest Stable Version](https://poser.pugx.org/wyrihaximus/async-test-utilities/v/stable.png)](https://packagist.org/packages/wyrihaximus/async-test-utilities)
-[![Total Downloads](https://poser.pugx.org/wyrihaximus/async-test-utilities/downloads.png)](https://packagist.org/packages/wyrihaximus/async-test-utilities/stats)
+![Continuous Integration](https://github.com/wyrihaximus/php-async-test-utilities/workflows/Continuous%20Integration/badge.svg)
+[![Latest Stable Version](https://poser.pugx.org/wyrihaximus/test-utilities/v/stable.png)](https://packagist.org/packages/wyrihaximus/test-utilities)
+[![Total Downloads](https://poser.pugx.org/wyrihaximus/test-utilities/downloads.png)](https://packagist.org/packages/wyrihaximus/test-utilities/stats)
 [![Code Coverage](https://scrutinizer-ci.com/g/WyriHaximus/php-async-test-utilities/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/WyriHaximus/php-async-test-utilities/?branch=master)
-[![License](https://poser.pugx.org/wyrihaximus/async-test-utilities/license.png)](https://packagist.org/packages/wyrihaximus/async-test-utilities)
-[![PHP 7 ready](http://php7ready.timesplinter.ch/WyriHaximus/php-async-test-utilities/badge.svg)](https://appveyor-ci.org/WyriHaximus/php-async-test-utilities)
+[![Type Coverage](https://shepherd.dev/github/WyriHaximus/php-async-test-utilities/coverage.svg)](https://shepherd.dev/github/WyriHaximus/php-async-test-utilities)
+[![License](https://poser.pugx.org/wyrihaximus/test-utilities/license.png)](https://packagist.org/packages/wyrihaximus/test-utilities)
 
 # Installation
 
 To install via [Composer](http://getcomposer.org/), use the command below, it will automatically detect the latest version and bind it with `^`.
 
 ```
-composer require wyrihaximus/async-test-utilities 
+composer require wyrihaximus/async-test-utilities
 ```
 
 # Usage

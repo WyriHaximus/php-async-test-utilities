@@ -1,6 +1,7 @@
 parameters:
-	classesAllowedToBeExtended:
-		- WyriHaximus\AsyncTestUtilities\AsyncTestCase
+	ergebnis:
+		classesAllowedToBeExtended:
+			- WyriHaximus\AsyncTestUtilities\AsyncTestCase
 
 includes:
 	- ../test-utilities/rules.neon
