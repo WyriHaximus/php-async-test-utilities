@@ -2,11 +2,13 @@
 
 namespace WyriHaximus\Tests\AsyncTestUtilities;
 
+use React\EventLoop\Factory;
 use React\EventLoop\LoopInterface;
 use React\Promise\Deferred;
 use React\Promise\Timer\TimeoutException;
 use WyriHaximus\AsyncTestUtilities\AsyncTestCase;
 use function React\Promise\resolve;
+use function time;
 
 final class AsyncTestCaseTest extends AsyncTestCase
 {
@@ -50,18 +52,24 @@ final class AsyncTestCaseTest extends AsyncTestCase
     public function testExpectCallableExactly(): void
     {
         $callable = $this->expectCallableExactly(3);
-        $callable();
-        $callable();
-        $callable();
+
+        $loop = Factory::create();
+        $loop->futureTick($callable);
+        $loop->futureTick($callable);
+        $loop->futureTick($callable);
+        $loop->run();
     }
 
     public function testExpectCallableOnce(): void
     {
-        $this->expectCallableOnce()();
+        $loop = Factory::create();
+        $loop->futureTick($this->expectCallableOnce());
+        $loop->run();
     }
 
     public function testExpectCallableNever(): void
     {
-        $this->expectCallableNever();
+        $loop = Factory::create();
+        $loop->futureTick($this->expectCallableNever());
     }
 }
