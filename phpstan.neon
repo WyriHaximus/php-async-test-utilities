@@ -1,4 +1,6 @@
 parameters:
+	excludes_analyse:
+		- tests/bootstrap.php
 	ignoreErrors:
 		- '#Method [a-zA-Z0-9\\_]+::[a-zA-Z0-9_]+\(\) has parameter \$[a-zA-Z0-9_]+ with a nullable type declaration.#'
 		- '#Method [a-zA-Z0-9\\_]+::[a-zA-Z0-9_]+\(\) has parameter \$[a-zA-Z0-9_]+ with null as default value.#'
