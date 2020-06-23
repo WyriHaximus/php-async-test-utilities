@@ -14,7 +14,6 @@
     "phpunit/phpunit": "^9.1",
     "react/event-loop": "^1.1",
     "react/promise": "^2.7",
-    "wyrihaximus/coding-standard": "^1.0",
     "wyrihaximus/test-utilities": "^2.2"
   },
   "require-dev": {
