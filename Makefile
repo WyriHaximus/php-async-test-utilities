@@ -43,3 +43,6 @@ composer-require-checker:
 
 composer-unused:
 	$(DOCKER_RUN) composer unused --ansi
+
+backward-compatibility-check:
+	$(DOCKER_RUN) vendor/bin/roave-backward-compatibility-check || true
