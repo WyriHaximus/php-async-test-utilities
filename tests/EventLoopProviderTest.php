@@ -1,9 +1,12 @@
-<?php declare(strict_types=1);
+<?php
+
+declare(strict_types=1);
 
 namespace WyriHaximus\Tests\AsyncTestUtilities;
 
 use React\EventLoop\LoopInterface;
 use WyriHaximus\TestUtilities\TestCase;
+
 use function array_filter;
 use function WyriHaximus\iteratorOrArrayToArray;
 

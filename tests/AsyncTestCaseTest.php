@@ -1,4 +1,6 @@
-<?php declare(strict_types=1);
+<?php
+
+declare(strict_types=1);
 
 namespace WyriHaximus\Tests\AsyncTestUtilities;
 
@@ -7,6 +9,7 @@ use React\EventLoop\LoopInterface;
 use React\Promise\Deferred;
 use React\Promise\Timer\TimeoutException;
 use WyriHaximus\AsyncTestUtilities\AsyncTestCase;
+
 use function React\Promise\resolve;
 use function time;
 

@@ -1,4 +1,6 @@
-<?php declare(strict_types=1);
+<?php
+
+declare(strict_types=1);
 
 namespace WyriHaximus\AsyncTestUtilities;
 
@@ -9,6 +11,7 @@ use React\EventLoop\LoopInterface;
 use React\EventLoop\StreamSelectLoop;
 use React\Promise\PromiseInterface;
 use WyriHaximus\TestUtilities\TestCase;
+
 use function Clue\React\Block\await;
 use function Clue\React\Block\awaitAll;
 use function Clue\React\Block\awaitAny;
