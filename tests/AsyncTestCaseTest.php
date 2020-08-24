@@ -18,7 +18,7 @@ final class AsyncTestCaseTest extends AsyncTestCase
     /**
      * @dataProvider provideEventLoop
      */
-    public function testAwait(?LoopInterface $loop): void
+    public function testAwait(?LoopInterface $loop = null): void
     {
         $value = time();
         static::assertSame($value, $this->await(resolve($value), $loop));
@@ -27,7 +27,7 @@ final class AsyncTestCaseTest extends AsyncTestCase
     /**
      * @dataProvider provideEventLoop
      */
-    public function testAwaitAll(?LoopInterface $loop): void
+    public function testAwaitAll(?LoopInterface $loop = null): void
     {
         $value = time();
         static::assertSame([$value, $value], $this->awaitAll([resolve($value), resolve($value)], $loop));
@@ -36,7 +36,7 @@ final class AsyncTestCaseTest extends AsyncTestCase
     /**
      * @dataProvider provideEventLoop
      */
-    public function testAwaitAny(?LoopInterface $loop): void
+    public function testAwaitAny(?LoopInterface $loop = null): void
     {
         $value = time();
         static::assertSame($value, $this->awaitAny([resolve($value), resolve($value)], $loop));
@@ -45,7 +45,7 @@ final class AsyncTestCaseTest extends AsyncTestCase
     /**
      * @dataProvider provideEventLoop
      */
-    public function testAwaitTimeout(?LoopInterface $loop): void
+    public function testAwaitTimeout(?LoopInterface $loop = null): void
     {
         self::expectException(TimeoutException::class);
 

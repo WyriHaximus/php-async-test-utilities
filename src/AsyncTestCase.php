@@ -28,6 +28,7 @@ abstract class AsyncTestCase extends TestCase
      */
     final public function provideEventLoop(): Generator
     {
+        yield [];
         yield [null];
         yield [Factory::create()];
         yield [new StreamSelectLoop()];
