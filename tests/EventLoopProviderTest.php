@@ -16,8 +16,8 @@ final class EventLoopProviderTest extends TestCase
     {
         $eventLoops = iteratorOrArrayToArray((new AsyncTestCaseTest())->provideEventLoop());
 
-        self::assertCount(3, $eventLoops);
-        self::assertCount(1, array_filter($eventLoops, static function ($eventLoop): bool {
+        self::assertCount(4, $eventLoops);
+        self::assertCount(2, array_filter($eventLoops, static function ($eventLoop): bool {
             return $eventLoop[0] instanceof LoopInterface === false;
         }));
         self::assertCount(2, array_filter($eventLoops, static function ($eventLoop): bool {

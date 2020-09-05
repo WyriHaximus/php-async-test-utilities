@@ -10,6 +10,7 @@
     },
     "mutators": {
         "@default": true,
+        "InstanceOf_": false,
         "ArrayItemRemoval": {
             "ignore": [
                 "WyriHaximus\\AsyncTestUtilities\\AsyncTestCase::provideEventLoop"
