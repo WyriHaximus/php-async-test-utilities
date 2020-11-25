@@ -8,6 +8,8 @@ use React\EventLoop\LoopInterface;
 use WyriHaximus\TestUtilities\TestCase;
 
 use function array_filter;
+use function count;
+use function current;
 use function WyriHaximus\iteratorOrArrayToArray;
 
 final class EventLoopProviderTest extends TestCase
@@ -17,11 +19,7 @@ final class EventLoopProviderTest extends TestCase
         $eventLoops = iteratorOrArrayToArray((new AsyncTestCaseTest())->provideEventLoop());
 
         self::assertCount(4, $eventLoops);
-        self::assertCount(2, array_filter($eventLoops, static function ($eventLoop): bool {
-            return $eventLoop[0] instanceof LoopInterface === false;
-        }));
-        self::assertCount(2, array_filter($eventLoops, static function ($eventLoop): bool {
-            return $eventLoop[0] !== null;
-        }));
+        self::assertCount(2, array_filter($eventLoops, static fn ($eventLoop): bool => count($eventLoop) === 0 || current($eventLoop) instanceof LoopInterface === false));
+        self::assertCount(2, array_filter($eventLoops, static fn ($eventLoop): bool => count($eventLoop) !== 0 && current($eventLoop) !== null));
     }
 }
