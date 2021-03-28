@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "017f5b506a749b0a7f08e584c59c3b52",
+    "content-hash": "b477ed451b8b95be50dcbc076f6bf815",
     "packages": [
         {
             "name": "amphp/amp",
@@ -8139,23 +8139,23 @@
         },
         {
             "name": "wyrihaximus/test-utilities",
-            "version": "3.6.6",
+            "version": "3.6.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/WyriHaximus/php-test-utilities.git",
-                "reference": "efeecbd3ce988ad2bd03cede6891f56a5a2d02c9"
+                "reference": "b09988d89d035464c15e9114e96830bb925a70c6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/WyriHaximus/php-test-utilities/zipball/efeecbd3ce988ad2bd03cede6891f56a5a2d02c9",
-                "reference": "efeecbd3ce988ad2bd03cede6891f56a5a2d02c9",
+                "url": "https://api.github.com/repos/WyriHaximus/php-test-utilities/zipball/b09988d89d035464c15e9114e96830bb925a70c6",
+                "reference": "b09988d89d035464c15e9114e96830bb925a70c6",
                 "shasum": ""
             },
             "require": {
                 "composer/composer": "^1.10.20",
                 "ergebnis/composer-normalize": "^2.13.3",
                 "icanhazstring/composer-unused": "^0.7.5",
-                "infection/infection": "^0.20.1",
+                "infection/infection": "^0.20.2",
                 "jakobbuis/simple-slow-test-reporter": "^1.0",
                 "maglnet/composer-require-checker": "^3.2.0",
                 "nunomaduro/collision": "^5.3.0",
@@ -8163,7 +8163,7 @@
                 "php-coveralls/php-coveralls": "^2.4.3",
                 "php-parallel-lint/php-console-highlighter": "^0.5",
                 "php-parallel-lint/php-parallel-lint": "^1.2.0",
-                "phpspec/prophecy": "^1.12.2",
+                "phpspec/prophecy": "^1.13",
                 "phpspec/prophecy-phpunit": "^2.0.1",
                 "phpstan/phpstan": "^0.12.82",
                 "phpunit/phpunit": "^9.5.4",
@@ -8221,7 +8221,7 @@
             "description": "🛠️ Test utilities for api-clients packages",
             "support": {
                 "issues": "https://github.com/WyriHaximus/php-test-utilities/issues",
-                "source": "https://github.com/WyriHaximus/php-test-utilities/tree/3.6.6"
+                "source": "https://github.com/WyriHaximus/php-test-utilities/tree/3.6.7"
             },
             "funding": [
                 {
@@ -8229,7 +8229,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2021-03-23T17:51:39+00:00"
+            "time": "2021-03-28T19:50:21+00:00"
         }
     ],
     "packages-dev": [
