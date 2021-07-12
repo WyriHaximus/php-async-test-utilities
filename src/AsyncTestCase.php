@@ -4,11 +4,8 @@ declare(strict_types=1);
 
 namespace WyriHaximus\AsyncTestUtilities;
 
-use Generator;
 use PHPUnit\Framework\MockObject\Rule\InvokedCount;
-use React\EventLoop\Factory;
-use React\EventLoop\LoopInterface;
-use React\EventLoop\StreamSelectLoop;
+use React\EventLoop\Loop;
 use React\Promise\PromiseInterface;
 use WyriHaximus\TestUtilities\TestCase;
 
@@ -24,30 +21,15 @@ abstract class AsyncTestCase extends TestCase
     private const INVOKE_ARRAY = ['__invoke'];
 
     /**
-     * @return Generator<array<int, LoopInterface|StreamSelectLoop|null>>
-     */
-    final public function provideEventLoop(): Generator
-    {
-        yield [];
-        yield [null];
-        yield [Factory::create()];
-        yield [new StreamSelectLoop()];
-    }
-
-    /**
      * @return mixed returns whatever the promise resolves to
      *
      * @psalm-suppress MissingReturnType
      *
      * @codingStandardsIgnoreStart
      */
-    final protected function await(PromiseInterface $promise, ?LoopInterface $loop = null, ?float $timeout = self::DEFAULT_AWAIT_TIMEOUT)
+    final protected function await(PromiseInterface $promise, ?float $timeout = self::DEFAULT_AWAIT_TIMEOUT)
     {
-        if (! ($loop instanceof LoopInterface)) {
-            $loop = Factory::create();
-        }
-
-        return await($promise, $loop, $timeout);
+        return await($promise, Loop::get(), $timeout);
     }
 
     /**
@@ -55,13 +37,9 @@ abstract class AsyncTestCase extends TestCase
      *
      * @return mixed[]
      */
-    final protected function awaitAll(array $promises, ?LoopInterface $loop = null, ?float $timeout = self::DEFAULT_AWAIT_TIMEOUT): array
+    final protected function awaitAll(array $promises, ?float $timeout = self::DEFAULT_AWAIT_TIMEOUT): array
     {
-        if (! ($loop instanceof LoopInterface)) {
-            $loop = Factory::create();
-        }
-
-        return awaitAll($promises, $loop, $timeout);
+        return awaitAll($promises, Loop::get(), $timeout);
     }
 
     /**
@@ -73,13 +51,9 @@ abstract class AsyncTestCase extends TestCase
      *
      * @codingStandardsIgnoreStart
      */
-    final protected function awaitAny(array $promises, ?LoopInterface $loop = null, ?float $timeout = self::DEFAULT_AWAIT_TIMEOUT)
+    final protected function awaitAny(array $promises, ?float $timeout = self::DEFAULT_AWAIT_TIMEOUT)
     {
-        if (! ($loop instanceof LoopInterface)) {
-            $loop = Factory::create();
-        }
-
-        return awaitAny($promises, $loop, $timeout);
+        return awaitAny($promises, Loop::get(), $timeout);
     }
 
     final protected function expectCallableExactly(int $amount): callable
