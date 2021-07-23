@@ -4,8 +4,7 @@ declare(strict_types=1);
 
 namespace WyriHaximus\Tests\AsyncTestUtilities;
 
-use React\EventLoop\Factory;
-use React\EventLoop\LoopInterface;
+use React\EventLoop\Loop;
 use React\Promise\Deferred;
 use React\Promise\Timer\TimeoutException;
 use WyriHaximus\AsyncTestUtilities\AsyncTestCase;
@@ -15,64 +14,44 @@ use function time;
 
 final class AsyncTestCaseTest extends AsyncTestCase
 {
-    /**
-     * @dataProvider provideEventLoop
-     */
-    public function testAwait(?LoopInterface $loop = null): void
+    public function testAwait(): void
     {
         $value = time();
-        static::assertSame($value, $this->await(resolve($value), $loop));
+        static::assertSame($value, $this->await(resolve($value)));
     }
 
-    /**
-     * @dataProvider provideEventLoop
-     */
-    public function testAwaitAll(?LoopInterface $loop = null): void
+    public function testAwaitAll(): void
     {
         $value = time();
-        static::assertSame([$value, $value], $this->awaitAll([resolve($value), resolve($value)], $loop));
+        static::assertSame([$value, $value], $this->awaitAll([resolve($value), resolve($value)]));
     }
 
-    /**
-     * @dataProvider provideEventLoop
-     */
-    public function testAwaitAny(?LoopInterface $loop = null): void
+    public function testAwaitAny(): void
     {
         $value = time();
-        static::assertSame($value, $this->awaitAny([resolve($value), resolve($value)], $loop));
+        static::assertSame($value, $this->awaitAny([resolve($value), resolve($value)]));
     }
 
-    /**
-     * @dataProvider provideEventLoop
-     */
-    public function testAwaitTimeout(?LoopInterface $loop = null): void
+    public function testAwaitTimeout(): void
     {
         self::expectException(TimeoutException::class);
 
-        $this->await((new Deferred())->promise(), $loop, 0.1);
+        $this->await((new Deferred())->promise(), 0.1);
     }
 
     public function testExpectCallableExactly(): void
     {
         $callable = $this->expectCallableExactly(3);
 
-        $loop = Factory::create();
-        $loop->futureTick($callable);
-        $loop->futureTick($callable);
-        $loop->futureTick($callable);
-        $loop->run();
+        Loop::futureTick($callable);
+        Loop::futureTick($callable);
+        Loop::futureTick($callable);
+        Loop::run();
     }
 
     public function testExpectCallableOnce(): void
     {
-        $loop = Factory::create();
-        $loop->futureTick($this->expectCallableOnce());
-        $loop->run();
-    }
-
-    public function testExpectCallableNever(): void
-    {
-        $loop = Factory::create();
-        $loop->futureTick($this->expectCallableNever());
+        Loop::futureTick($this->expectCallableOnce());
+        Loop::run();
     }
 }
