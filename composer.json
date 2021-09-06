@@ -17,7 +17,7 @@
     "wyrihaximus/test-utilities": "^3.7.3"
   },
   "require-dev": {
-    "wyrihaximus/iterator-or-array-to-array": "^1.1"
+    "wyrihaximus/iterator-or-array-to-array": "^1.2"
   },
   "config": {
     "platform": {
