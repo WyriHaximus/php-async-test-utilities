@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "0801a6f71a0c3aafc26ade27c83ece9d",
+    "content-hash": "9a2f49d944d69414d9ea56f2d0455ed4",
     "packages": [
         {
             "name": "amphp/amp",
@@ -240,27 +240,27 @@
         },
         {
             "name": "clue/block-react",
-            "version": "v1.4.0",
+            "version": "v1.5.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/clue/reactphp-block.git",
-                "reference": "c8e7583ae55127b89d6915480ce295bac81c4f88"
+                "reference": "718b0571a94aa693c6fffc72182e87257ac900f3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/clue/reactphp-block/zipball/c8e7583ae55127b89d6915480ce295bac81c4f88",
-                "reference": "c8e7583ae55127b89d6915480ce295bac81c4f88",
+                "url": "https://api.github.com/repos/clue/reactphp-block/zipball/718b0571a94aa693c6fffc72182e87257ac900f3",
+                "reference": "718b0571a94aa693c6fffc72182e87257ac900f3",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.3",
-                "react/event-loop": "^1.0 || ^0.5 || ^0.4 || ^0.3.5",
-                "react/promise": "^2.7 || ^1.2.1",
+                "react/event-loop": "^1.2",
+                "react/promise": "^3.0 || ^2.7 || ^1.2.1",
                 "react/promise-timer": "^1.5"
             },
             "require-dev": {
                 "phpunit/phpunit": "^9.3 || ^5.7 || ^4.8.35",
-                "react/http": "^1.0"
+                "react/http": "^1.4"
             },
             "type": "library",
             "autoload": {
@@ -292,7 +292,7 @@
             ],
             "support": {
                 "issues": "https://github.com/clue/reactphp-block/issues",
-                "source": "https://github.com/clue/reactphp-block/tree/v1.4.0"
+                "source": "https://github.com/clue/reactphp-block/tree/v1.5.0"
             },
             "funding": [
                 {
@@ -304,7 +304,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2020-08-21T14:09:44+00:00"
+            "time": "2021-10-20T14:07:33+00:00"
         },
         {
             "name": "composer/ca-bundle",
@@ -4830,25 +4830,25 @@
         },
         {
             "name": "react/promise-timer",
-            "version": "v1.6.0",
+            "version": "v1.7.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/reactphp/promise-timer.git",
-                "reference": "daee9baf6ef30c43ea4c86399f828bb5f558f6e6"
+                "reference": "607dd79990e32fcb402cb0a176b4a4be12f97e7c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/reactphp/promise-timer/zipball/daee9baf6ef30c43ea4c86399f828bb5f558f6e6",
-                "reference": "daee9baf6ef30c43ea4c86399f828bb5f558f6e6",
+                "url": "https://api.github.com/repos/reactphp/promise-timer/zipball/607dd79990e32fcb402cb0a176b4a4be12f97e7c",
+                "reference": "607dd79990e32fcb402cb0a176b4a4be12f97e7c",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.3",
-                "react/event-loop": "^1.0 || ^0.5 || ^0.4 || ^0.3.5",
+                "react/event-loop": "^1.2",
                 "react/promise": "^3.0 || ^2.7.0 || ^1.2.1"
             },
             "require-dev": {
-                "phpunit/phpunit": "^9.0 || ^5.7 || ^4.8.35"
+                "phpunit/phpunit": "^9.3 || ^5.7 || ^4.8.35"
             },
             "type": "library",
             "autoload": {
@@ -4866,7 +4866,23 @@
             "authors": [
                 {
                     "name": "Christian Lück",
-                    "email": "christian@lueck.tv"
+                    "email": "christian@clue.engineering",
+                    "homepage": "https://clue.engineering/"
+                },
+                {
+                    "name": "Cees-Jan Kiewiet",
+                    "email": "reactphp@ceesjankiewiet.nl",
+                    "homepage": "https://wyrihaximus.net/"
+                },
+                {
+                    "name": "Jan Sorgalla",
+                    "email": "jsorgalla@gmail.com",
+                    "homepage": "https://sorgalla.com/"
+                },
+                {
+                    "name": "Chris Boden",
+                    "email": "cboden@gmail.com",
+                    "homepage": "https://cboden.dev/"
                 }
             ],
             "description": "A trivial implementation of timeouts for Promises, built on top of ReactPHP.",
@@ -4881,9 +4897,19 @@
             ],
             "support": {
                 "issues": "https://github.com/reactphp/promise-timer/issues",
-                "source": "https://github.com/reactphp/promise-timer/tree/v1.6.0"
+                "source": "https://github.com/reactphp/promise-timer/tree/v1.7.0"
             },
-            "time": "2020-07-10T12:18:06+00:00"
+            "funding": [
+                {
+                    "url": "https://github.com/WyriHaximus",
+                    "type": "github"
+                },
+                {
+                    "url": "https://github.com/clue",
+                    "type": "github"
+                }
+            ],
+            "time": "2021-07-11T13:08:51+00:00"
         },
         {
             "name": "roave/backward-compatibility-check",

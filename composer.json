@@ -10,7 +10,7 @@
   ],
   "require": {
     "php": "^8 || ^7.4",
-    "clue/block-react": "^1.4",
+    "clue/block-react": "^1.5",
     "phpunit/phpunit": "^9.5",
     "react/event-loop": "^1.2",
     "react/promise": "^2.8",
