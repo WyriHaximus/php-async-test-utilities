@@ -14,12 +14,19 @@
     "phpunit/phpunit": "^9.5",
     "react/event-loop": "^1.2",
     "react/promise": "^2.8",
-    "wyrihaximus/test-utilities": "^3.7.6"
+    "wyrihaximus/test-utilities": "^4 || ^3.7.6"
   },
   "require-dev": {
     "wyrihaximus/iterator-or-array-to-array": "^1.2"
   },
   "config": {
+    "allow-plugins": {
+      "composer/package-versions-deprecated": true,
+      "dealerdirect/phpcodesniffer-composer-installer": true,
+      "ergebnis/composer-normalize": true,
+      "icanhazstring/composer-unused": true,
+      "infection/extension-installer": true
+    },
     "platform": {
       "php": "7.4.7"
     },
