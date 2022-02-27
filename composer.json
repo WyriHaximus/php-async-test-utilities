@@ -13,7 +13,7 @@
     "clue/block-react": "^1.5",
     "phpunit/phpunit": "^9.5",
     "react/event-loop": "^1.2",
-    "react/promise": "^2.8",
+    "react/promise": "^2.9",
     "wyrihaximus/test-utilities": "^5 || ^4 || ^3.7.6"
   },
   "require-dev": {
