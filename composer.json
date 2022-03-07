@@ -9,28 +9,15 @@
     }
   ],
   "require": {
-    "php": "^8 || ^7.4",
+    "php": "^8",
     "clue/block-react": "^1.5",
     "phpunit/phpunit": "^9.5",
     "react/event-loop": "^1.3",
     "react/promise": "^2.9",
-    "wyrihaximus/test-utilities": "^5 || ^4 || ^3.7.6"
+    "wyrihaximus/test-utilities": "^5"
   },
   "require-dev": {
     "wyrihaximus/iterator-or-array-to-array": "^1.2"
-  },
-  "config": {
-    "allow-plugins": {
-      "composer/package-versions-deprecated": true,
-      "dealerdirect/phpcodesniffer-composer-installer": true,
-      "ergebnis/composer-normalize": true,
-      "icanhazstring/composer-unused": true,
-      "infection/extension-installer": true
-    },
-    "platform": {
-      "php": "7.4.7"
-    },
-    "sort-packages": true
   },
   "autoload": {
     "psr-4": {
@@ -44,6 +31,19 @@
     "files": [
       "tests/bootstrap.php"
     ]
+  },
+  "config": {
+    "allow-plugins": {
+      "composer/package-versions-deprecated": true,
+      "dealerdirect/phpcodesniffer-composer-installer": true,
+      "ergebnis/composer-normalize": true,
+      "icanhazstring/composer-unused": true,
+      "infection/extension-installer": true
+    },
+    "platform": {
+      "php": "8.0.13"
+    },
+    "sort-packages": true
   },
   "scripts": {
     "post-install-cmd": [

@@ -1,4 +1,4 @@
-covHtml/
+var/*
+!var/.gitkeep
 vendor/
-humbuglog.txt
-humbuglog.json
+etc/qa/.phpunit.result.cache
