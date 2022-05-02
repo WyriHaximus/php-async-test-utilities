@@ -12,7 +12,6 @@ use WyriHaximus\TestUtilities\TestCase;
 use function Clue\React\Block\await;
 use function Clue\React\Block\awaitAll;
 use function Clue\React\Block\awaitAny;
-use function spl_object_hash;
 
 abstract class AsyncTestCase extends TestCase
 {
@@ -76,15 +75,9 @@ abstract class AsyncTestCase extends TestCase
     {
         $mock = $this->getMockBuilder(CallableStub::class)->onlyMethods(self::INVOKE_ARRAY)->getMock();
         /** @psalm-suppress InternalMethod */
-        $method = $mock
+        $mock
             ->expects($invokedCount)
             ->method('__invoke');
-
-        /**
-         * Trick to keep infection from dropping the above line.
-         */
-        $id = spl_object_hash($method);
-        $di = $id;
 
         /** @psalm-suppress InvalidReturnStatement */
         return $mock;
