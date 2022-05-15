@@ -422,16 +422,16 @@
         },
         {
             "name": "composer-unused/symbol-parser",
-            "version": "0.1.8",
+            "version": "0.1.9",
             "source": {
                 "type": "git",
                 "url": "https://github.com/composer-unused/symbol-parser.git",
-                "reference": "605be0cb0049341c8f35b94a11f1cba68c8f930b"
+                "reference": "d16e5607d55041ae6135ed07a7935675010d971b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/composer-unused/symbol-parser/zipball/605be0cb0049341c8f35b94a11f1cba68c8f930b",
-                "reference": "605be0cb0049341c8f35b94a11f1cba68c8f930b",
+                "url": "https://api.github.com/repos/composer-unused/symbol-parser/zipball/d16e5607d55041ae6135ed07a7935675010d971b",
+                "reference": "d16e5607d55041ae6135ed07a7935675010d971b",
                 "shasum": ""
             },
             "require": {
@@ -444,8 +444,8 @@
             },
             "require-dev": {
                 "ext-ds": "*",
-                "phpstan/phpstan": "^1.4",
-                "phpunit/phpunit": "^9.5.18",
+                "phpstan/phpstan": "^1.6",
+                "phpunit/phpunit": "^9.5.20",
                 "roave/security-advisories": "dev-master",
                 "squizlabs/php_codesniffer": "^3.6.2",
                 "symfony/serializer": "^5.4"
@@ -487,7 +487,7 @@
                     "type": "other"
                 }
             ],
-            "time": "2022-03-09T17:46:04+00:00"
+            "time": "2022-05-03T17:31:36+00:00"
         },
         {
             "name": "composer/ca-bundle",
@@ -4224,16 +4224,16 @@
         },
         {
             "name": "phpstan/phpdoc-parser",
-            "version": "1.4.5",
+            "version": "1.5.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpstan/phpdoc-parser.git",
-                "reference": "129a63b3bc7caeb593c224c41f420675e63cfefc"
+                "reference": "981cc368a216c988e862a75e526b6076987d1b50"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpstan/phpdoc-parser/zipball/129a63b3bc7caeb593c224c41f420675e63cfefc",
-                "reference": "129a63b3bc7caeb593c224c41f420675e63cfefc",
+                "url": "https://api.github.com/repos/phpstan/phpdoc-parser/zipball/981cc368a216c988e862a75e526b6076987d1b50",
+                "reference": "981cc368a216c988e862a75e526b6076987d1b50",
                 "shasum": ""
             },
             "require": {
@@ -4262,22 +4262,22 @@
             "description": "PHPDoc parser with support for nullable, intersection and generic types",
             "support": {
                 "issues": "https://github.com/phpstan/phpdoc-parser/issues",
-                "source": "https://github.com/phpstan/phpdoc-parser/tree/1.4.5"
+                "source": "https://github.com/phpstan/phpdoc-parser/tree/1.5.1"
             },
-            "time": "2022-04-22T11:11:01+00:00"
+            "time": "2022-05-05T11:32:40+00:00"
         },
         {
             "name": "phpstan/phpstan",
-            "version": "1.6.4",
+            "version": "1.6.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpstan/phpstan.git",
-                "reference": "e4cd0c2dd97809fcfdcd1f367ccf0be86c235168"
+                "reference": "d41c39cb2e487663bce9bbd97c660e244b73abad"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpstan/phpstan/zipball/e4cd0c2dd97809fcfdcd1f367ccf0be86c235168",
-                "reference": "e4cd0c2dd97809fcfdcd1f367ccf0be86c235168",
+                "url": "https://api.github.com/repos/phpstan/phpstan/zipball/d41c39cb2e487663bce9bbd97c660e244b73abad",
+                "reference": "d41c39cb2e487663bce9bbd97c660e244b73abad",
                 "shasum": ""
             },
             "require": {
@@ -4303,7 +4303,7 @@
             "description": "PHPStan - PHP Static Analysis Tool",
             "support": {
                 "issues": "https://github.com/phpstan/phpstan/issues",
-                "source": "https://github.com/phpstan/phpstan/tree/1.6.4"
+                "source": "https://github.com/phpstan/phpstan/tree/1.6.7"
             },
             "funding": [
                 {
@@ -4323,7 +4323,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2022-05-02T16:02:21+00:00"
+            "time": "2022-05-04T22:55:41+00:00"
         },
         {
             "name": "phpstan/phpstan-deprecation-rules",
@@ -4480,16 +4480,16 @@
         },
         {
             "name": "phpstan/phpstan-strict-rules",
-            "version": "1.2.2",
+            "version": "1.2.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpstan/phpstan-strict-rules.git",
-                "reference": "c0b61e25933ca27ff65c66971336dd6e5061d756"
+                "reference": "0c82c96f2a55d8b91bbc7ee6512c94f68a206b43"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpstan/phpstan-strict-rules/zipball/c0b61e25933ca27ff65c66971336dd6e5061d756",
-                "reference": "c0b61e25933ca27ff65c66971336dd6e5061d756",
+                "url": "https://api.github.com/repos/phpstan/phpstan-strict-rules/zipball/0c82c96f2a55d8b91bbc7ee6512c94f68a206b43",
+                "reference": "0c82c96f2a55d8b91bbc7ee6512c94f68a206b43",
                 "shasum": ""
             },
             "require": {
@@ -4522,9 +4522,9 @@
             "description": "Extra strict and opinionated rules for PHPStan",
             "support": {
                 "issues": "https://github.com/phpstan/phpstan-strict-rules/issues",
-                "source": "https://github.com/phpstan/phpstan-strict-rules/tree/1.2.2"
+                "source": "https://github.com/phpstan/phpstan-strict-rules/tree/1.2.3"
             },
-            "time": "2022-05-02T11:06:04+00:00"
+            "time": "2022-05-04T15:20:40+00:00"
         },
         {
             "name": "phpunit/php-code-coverage",
@@ -6983,32 +6983,32 @@
         },
         {
             "name": "slevomat/coding-standard",
-            "version": "7.1",
+            "version": "7.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/slevomat/coding-standard.git",
-                "reference": "b521bd358b5f7a7d69e9637fd139e036d8adeb6f"
+                "reference": "b4f96a8beea515d2d89141b7b9ad72f526d84071"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/slevomat/coding-standard/zipball/b521bd358b5f7a7d69e9637fd139e036d8adeb6f",
-                "reference": "b521bd358b5f7a7d69e9637fd139e036d8adeb6f",
+                "url": "https://api.github.com/repos/slevomat/coding-standard/zipball/b4f96a8beea515d2d89141b7b9ad72f526d84071",
+                "reference": "b4f96a8beea515d2d89141b7b9ad72f526d84071",
                 "shasum": ""
             },
             "require": {
                 "dealerdirect/phpcodesniffer-composer-installer": "^0.6.2 || ^0.7",
                 "php": "^7.2 || ^8.0",
-                "phpstan/phpdoc-parser": "^1.4.1",
+                "phpstan/phpdoc-parser": "^1.5.1",
                 "squizlabs/php_codesniffer": "^3.6.2"
             },
             "require-dev": {
-                "phing/phing": "2.17.2",
+                "phing/phing": "2.17.3",
                 "php-parallel-lint/php-parallel-lint": "1.3.2",
-                "phpstan/phpstan": "1.4.10|1.5.2",
+                "phpstan/phpstan": "1.4.10|1.6.7",
                 "phpstan/phpstan-deprecation-rules": "1.0.0",
-                "phpstan/phpstan-phpunit": "1.0.0|1.1.0",
-                "phpstan/phpstan-strict-rules": "1.1.0",
-                "phpunit/phpunit": "7.5.20|8.5.21|9.5.19"
+                "phpstan/phpstan-phpunit": "1.0.0|1.1.1",
+                "phpstan/phpstan-strict-rules": "1.2.3",
+                "phpunit/phpunit": "7.5.20|8.5.21|9.5.20"
             },
             "type": "phpcodesniffer-standard",
             "extra": {
@@ -7028,7 +7028,7 @@
             "description": "Slevomat Coding Standard for PHP_CodeSniffer complements Consistence Coding Standard by providing sniffs with additional checks.",
             "support": {
                 "issues": "https://github.com/slevomat/coding-standard/issues",
-                "source": "https://github.com/slevomat/coding-standard/tree/7.1"
+                "source": "https://github.com/slevomat/coding-standard/tree/7.2.0"
             },
             "funding": [
                 {
@@ -7040,7 +7040,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2022-03-29T12:44:16+00:00"
+            "time": "2022-05-06T10:58:42+00:00"
         },
         {
             "name": "squizlabs/php_codesniffer",
@@ -9158,16 +9158,16 @@
         },
         {
             "name": "wyrihaximus/coding-standard",
-            "version": "2.10.0",
+            "version": "2.11.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/WyriHaximus/php-coding-standard.git",
-                "reference": "870e50a2e4e8d2bd75d37ccc09831ed7e9978181"
+                "reference": "5ca5721d98254cdc9a7df967f19dac4271c91a94"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/WyriHaximus/php-coding-standard/zipball/870e50a2e4e8d2bd75d37ccc09831ed7e9978181",
-                "reference": "870e50a2e4e8d2bd75d37ccc09831ed7e9978181",
+                "url": "https://api.github.com/repos/WyriHaximus/php-coding-standard/zipball/5ca5721d98254cdc9a7df967f19dac4271c91a94",
+                "reference": "5ca5721d98254cdc9a7df967f19dac4271c91a94",
                 "shasum": ""
             },
             "require": {
@@ -9185,7 +9185,7 @@
             "description": "WyriHaximus Coding Standard",
             "support": {
                 "issues": "https://github.com/WyriHaximus/php-coding-standard/issues",
-                "source": "https://github.com/WyriHaximus/php-coding-standard/tree/2.10.0"
+                "source": "https://github.com/WyriHaximus/php-coding-standard/tree/2.11.0"
             },
             "funding": [
                 {
@@ -9193,7 +9193,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2022-03-26T10:08:00+00:00"
+            "time": "2022-05-06T18:16:32+00:00"
         },
         {
             "name": "wyrihaximus/phpstan-rules-wrapper",
@@ -9247,20 +9247,20 @@
         },
         {
             "name": "wyrihaximus/test-utilities",
-            "version": "5.0.6",
+            "version": "5.0.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/WyriHaximus/php-test-utilities.git",
-                "reference": "460aaf4bcf408c74a7c3f460e29fff9e07376251"
+                "reference": "a61e377784bb16b1d4ac6750a78bb4584f6a0494"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/WyriHaximus/php-test-utilities/zipball/460aaf4bcf408c74a7c3f460e29fff9e07376251",
-                "reference": "460aaf4bcf408c74a7c3f460e29fff9e07376251",
+                "url": "https://api.github.com/repos/WyriHaximus/php-test-utilities/zipball/a61e377784bb16b1d4ac6750a78bb4584f6a0494",
+                "reference": "a61e377784bb16b1d4ac6750a78bb4584f6a0494",
                 "shasum": ""
             },
             "require": {
-                "ergebnis/composer-normalize": "^2.25.2",
+                "ergebnis/composer-normalize": "^2.26.0",
                 "icanhazstring/composer-unused": "^0.8.2",
                 "infection/infection": "^0.26.5",
                 "jakobbuis/simple-slow-test-reporter": "^1.0",
@@ -9274,7 +9274,7 @@
                 "php-standard-library/psalm-plugin": "^1.1",
                 "phpspec/prophecy": "^1.15",
                 "phpspec/prophecy-phpunit": "^2.0.1",
-                "phpstan/phpstan": "^1.6.2",
+                "phpstan/phpstan": "^1.6.7",
                 "phpunit/phpunit": "^9.5.19",
                 "psalm/plugin-phpunit": "^0.16.1",
                 "roave/backward-compatibility-check": "^6",
@@ -9282,7 +9282,7 @@
                 "squizlabs/php_codesniffer": "^3.6.2",
                 "thecodingmachine/safe": "^1.3.3",
                 "vimeo/psalm": "^4.23",
-                "wyrihaximus/coding-standard": "^2.10.0",
+                "wyrihaximus/coding-standard": "^2.11.0",
                 "wyrihaximus/phpstan-rules-wrapper": "^2"
             },
             "type": "library",
@@ -9324,7 +9324,7 @@
             "description": "🛠️ Test utilities for api-clients packages",
             "support": {
                 "issues": "https://github.com/WyriHaximus/php-test-utilities/issues",
-                "source": "https://github.com/WyriHaximus/php-test-utilities/tree/5.0.6"
+                "source": "https://github.com/WyriHaximus/php-test-utilities/tree/5.0.7"
             },
             "funding": [
                 {
@@ -9332,7 +9332,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2022-05-02T08:19:52+00:00"
+            "time": "2022-05-08T22:37:47+00:00"
         }
     ],
     "packages-dev": [
