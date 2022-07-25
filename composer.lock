@@ -9247,16 +9247,16 @@
         },
         {
             "name": "wyrihaximus/test-utilities",
-            "version": "5.0.17",
+            "version": "5.0.18",
             "source": {
                 "type": "git",
                 "url": "https://github.com/WyriHaximus/php-test-utilities.git",
-                "reference": "e7ff3d285a70c285e51edea7b43a874090cdcc6c"
+                "reference": "42c4d8d1730d165f24f297bc0dbae170b6ce3350"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/WyriHaximus/php-test-utilities/zipball/e7ff3d285a70c285e51edea7b43a874090cdcc6c",
-                "reference": "e7ff3d285a70c285e51edea7b43a874090cdcc6c",
+                "url": "https://api.github.com/repos/WyriHaximus/php-test-utilities/zipball/42c4d8d1730d165f24f297bc0dbae170b6ce3350",
+                "reference": "42c4d8d1730d165f24f297bc0dbae170b6ce3350",
                 "shasum": ""
             },
             "require": {
@@ -9327,7 +9327,7 @@
             "description": "🛠️ Test utilities for api-clients packages",
             "support": {
                 "issues": "https://github.com/WyriHaximus/php-test-utilities/issues",
-                "source": "https://github.com/WyriHaximus/php-test-utilities/tree/5.0.17"
+                "source": "https://github.com/WyriHaximus/php-test-utilities/tree/5.0.18"
             },
             "funding": [
                 {
@@ -9335,7 +9335,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2022-07-22T20:35:41+00:00"
+            "time": "2022-07-25T15:50:30+00:00"
         }
     ],
     "packages-dev": [
