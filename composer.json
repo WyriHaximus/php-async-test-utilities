@@ -10,11 +10,11 @@
   ],
   "require": {
     "php": "^8",
-    "clue/block-react": "^1.5",
-    "phpunit/phpunit": "^9.5",
-    "react/event-loop": "^1.3",
-    "react/promise": "^2.9",
-    "wyrihaximus/test-utilities": "^5"
+    "clue/block-react": "^1.5.",
+    "phpunit/phpunit": "^9.5.21",
+    "react/event-loop": "^1.3.0",
+    "react/promise": "^2.9.",
+    "wyrihaximus/test-utilities": "^5.0.20"
   },
   "require-dev": {
     "wyrihaximus/iterator-or-array-to-array": "^1.2"
