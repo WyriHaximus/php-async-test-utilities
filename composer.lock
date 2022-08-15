@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "cb5398bb44370382b9d5dfa46f1cf751",
+    "content-hash": "2f63494af1463a508dd6f3c87eedaaca",
     "packages": [
         {
             "name": "amphp/amp",
@@ -9242,16 +9242,16 @@
         },
         {
             "name": "wyrihaximus/test-utilities",
-            "version": "5.0.21",
+            "version": "5.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/WyriHaximus/php-test-utilities.git",
-                "reference": "d393dfbf9a2fe10af2ae0a2f11f1c42b9069505c"
+                "reference": "c88c32cc3e31a507604116452586ab6472b00abf"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/WyriHaximus/php-test-utilities/zipball/d393dfbf9a2fe10af2ae0a2f11f1c42b9069505c",
-                "reference": "d393dfbf9a2fe10af2ae0a2f11f1c42b9069505c",
+                "url": "https://api.github.com/repos/WyriHaximus/php-test-utilities/zipball/c88c32cc3e31a507604116452586ab6472b00abf",
+                "reference": "c88c32cc3e31a507604116452586ab6472b00abf",
                 "shasum": ""
             },
             "require": {
@@ -9275,7 +9275,7 @@
                 "roave/backward-compatibility-check": "^7 || ^6",
                 "roave/infection-static-analysis-plugin": "^1.18.0",
                 "squizlabs/php_codesniffer": "^3.7.1",
-                "thecodingmachine/safe": "^1.3.3 || ^2.2",
+                "thecodingmachine/safe": "^2.2.3",
                 "vimeo/psalm": "^4.26",
                 "wyrihaximus/coding-standard": "^2.11.0",
                 "wyrihaximus/phpstan-rules-wrapper": "^2"
@@ -9322,7 +9322,7 @@
             "description": "🛠️ Test utilities for api-clients packages",
             "support": {
                 "issues": "https://github.com/WyriHaximus/php-test-utilities/issues",
-                "source": "https://github.com/WyriHaximus/php-test-utilities/tree/5.0.21"
+                "source": "https://github.com/WyriHaximus/php-test-utilities/tree/5.1.0"
             },
             "funding": [
                 {
@@ -9330,7 +9330,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2022-08-12T10:13:18+00:00"
+            "time": "2022-08-12T10:56:29+00:00"
         }
     ],
     "packages-dev": [
