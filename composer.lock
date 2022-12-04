@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "47514401c30c3c2e356de46f7ff6c70b",
+    "content-hash": "306dc6f5b4c45ff5784b9b6d7ec57fc4",
     "packages": [
         {
             "name": "amphp/amp",
@@ -5966,16 +5966,16 @@
         },
         {
             "name": "sanmai/pipeline",
-            "version": "v6.2",
+            "version": "v6.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sanmai/pipeline.git",
-                "reference": "1c14946cb089776fb024807f1e4f5a985db0ce3c"
+                "reference": "929b115ca58d62b6b2574702df1ebde4562c7c43"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sanmai/pipeline/zipball/1c14946cb089776fb024807f1e4f5a985db0ce3c",
-                "reference": "1c14946cb089776fb024807f1e4f5a985db0ce3c",
+                "url": "https://api.github.com/repos/sanmai/pipeline/zipball/929b115ca58d62b6b2574702df1ebde4562c7c43",
+                "reference": "929b115ca58d62b6b2574702df1ebde4562c7c43",
                 "shasum": ""
             },
             "require": {
@@ -6019,7 +6019,7 @@
             "description": "General-purpose collections pipeline",
             "support": {
                 "issues": "https://github.com/sanmai/pipeline/issues",
-                "source": "https://github.com/sanmai/pipeline/tree/v6.2"
+                "source": "https://github.com/sanmai/pipeline/tree/v6.3"
             },
             "funding": [
                 {
@@ -6027,7 +6027,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2022-11-09T05:47:57+00:00"
+            "time": "2022-11-30T06:07:06+00:00"
         },
         {
             "name": "sebastian/cli-parser",
@@ -9429,16 +9429,16 @@
         },
         {
             "name": "wyrihaximus/test-utilities",
-            "version": "5.1.9",
+            "version": "5.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/WyriHaximus/php-test-utilities.git",
-                "reference": "42918a98c74558d395f584e3c9db5c672cbe2353"
+                "reference": "7aa84820075a0d0f5a36aa46fb13f3776932e737"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/WyriHaximus/php-test-utilities/zipball/42918a98c74558d395f584e3c9db5c672cbe2353",
-                "reference": "42918a98c74558d395f584e3c9db5c672cbe2353",
+                "url": "https://api.github.com/repos/WyriHaximus/php-test-utilities/zipball/7aa84820075a0d0f5a36aa46fb13f3776932e737",
+                "reference": "7aa84820075a0d0f5a36aa46fb13f3776932e737",
                 "shasum": ""
             },
             "require": {
@@ -9463,9 +9463,9 @@
                 "roave/infection-static-analysis-plugin": "^1.25.0",
                 "squizlabs/php_codesniffer": "^3.7.1",
                 "thecodingmachine/safe": "^2.4.0",
-                "vimeo/psalm": "^4.30",
+                "vimeo/psalm": "^5 || ^4.30",
                 "wyrihaximus/coding-standard": "^2.11.0",
-                "wyrihaximus/phpstan-rules-wrapper": "^2"
+                "wyrihaximus/phpstan-rules-wrapper": "^2.7.0"
             },
             "conflict": {
                 "symfony/dependency-injection": "<5.0.0"
@@ -9509,7 +9509,7 @@
             "description": "🛠️ Test utilities for api-clients packages",
             "support": {
                 "issues": "https://github.com/WyriHaximus/php-test-utilities/issues",
-                "source": "https://github.com/WyriHaximus/php-test-utilities/tree/5.1.9"
+                "source": "https://github.com/WyriHaximus/php-test-utilities/tree/5.2.0"
             },
             "funding": [
                 {
@@ -9517,7 +9517,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2022-11-29T19:44:21+00:00"
+            "time": "2022-11-30T15:40:22+00:00"
         }
     ],
     "packages-dev": [
