@@ -9,12 +9,12 @@
     }
   ],
   "require": {
-    "php": "^8",
-    "clue/block-react": "^1.5.",
+    "php": "^8.2",
     "phpunit/phpunit": "^9.5.27",
+    "react/async": "^4.0",
     "react/event-loop": "^1.3.0",
     "react/promise": "^2.9.",
-    "wyrihaximus/test-utilities": "^5.2.4"
+    "wyrihaximus/test-utilities": "^5.3.1"
   },
   "require-dev": {
     "wyrihaximus/iterator-or-array-to-array": "^1.2"
@@ -41,7 +41,7 @@
       "infection/extension-installer": true
     },
     "platform": {
-      "php": "8.0.13"
+      "php": "8.2.13"
     },
     "sort-packages": true
   },

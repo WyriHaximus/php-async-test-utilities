@@ -5,8 +5,6 @@ declare(strict_types=1);
 namespace WyriHaximus\Tests\AsyncTestUtilities;
 
 use React\EventLoop\Loop;
-use React\Promise\Deferred;
-use React\Promise\Timer\TimeoutException;
 use WyriHaximus\AsyncTestUtilities\AsyncTestCase;
 
 use function React\Promise\resolve;
@@ -23,20 +21,13 @@ final class AsyncTestCaseTest extends AsyncTestCase
     public function testAwaitAll(): void
     {
         $value = time();
-        static::assertSame([$value, $value], $this->awaitAll([resolve($value), resolve($value)]));
+        static::assertSame([$value, $value], $this->awaitAll(resolve($value), resolve($value)));
     }
 
     public function testAwaitAny(): void
     {
         $value = time();
-        static::assertSame($value, $this->awaitAny([resolve($value), resolve($value)]));
-    }
-
-    public function testAwaitTimeout(): void
-    {
-        self::expectException(TimeoutException::class);
-
-        $this->await((new Deferred())->promise(), 0.1);
+        static::assertSame($value, $this->awaitAny(resolve($value), resolve($value)));
     }
 
     public function testExpectCallableExactly(): void

@@ -2,7 +2,6 @@ parameters:
 	excludes_analyse:
 		- tests/bootstrap.php
 	ignoreErrors:
-		- '#Method [a-zA-Z0-9\\_]+::[a-zA-Z0-9_]+\(\) has parameter \$[a-zA-Z0-9_]+ with a nullable type declaration.#'
 		- '#Method WyriHaximus\\AsyncTestUtilities\\CallableStub::__invoke\(\) is not final, but since the containing class is abstract, it should be.#'
 	ergebnis:
 		classesAllowedToBeExtended:
