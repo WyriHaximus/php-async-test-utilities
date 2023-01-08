@@ -5,18 +5,15 @@ declare(strict_types=1);
 namespace WyriHaximus\AsyncTestUtilities;
 
 use PHPUnit\Framework\MockObject\Rule\InvokedCount;
-use React\EventLoop\Loop;
 use React\Promise\PromiseInterface;
 use WyriHaximus\TestUtilities\TestCase;
 
-use function Clue\React\Block\await;
-use function Clue\React\Block\awaitAll;
-use function Clue\React\Block\awaitAny;
+use function React\Async\await;
+use function React\Promise\all;
+use function React\Promise\any;
 
 abstract class AsyncTestCase extends TestCase
 {
-    public const DEFAULT_AWAIT_TIMEOUT = 6.0;
-
     private const INVOKE_ARRAY = ['__invoke'];
 
     /**
@@ -26,33 +23,30 @@ abstract class AsyncTestCase extends TestCase
      *
      * @codingStandardsIgnoreStart
      */
-    final protected function await(PromiseInterface $promise, ?float $timeout = self::DEFAULT_AWAIT_TIMEOUT)
+    final protected function await(PromiseInterface $promise): mixed
     {
-        return await($promise, Loop::get(), $timeout);
+        return await($promise);
     }
 
     /**
-     * @param  PromiseInterface[] $promises
-     *
-     * @return mixed[]
+     * @return array<mixed>
      */
-    final protected function awaitAll(array $promises, ?float $timeout = self::DEFAULT_AWAIT_TIMEOUT): array
+    final protected function awaitAll(PromiseInterface ...$promises): array
     {
-        return awaitAll($promises, Loop::get(), $timeout);
+        /** @var array<mixed> */
+        return await(all($promises));
     }
 
     /**
-     * @param  PromiseInterface[] $promises
-     *
      * @return mixed
      *
      * @psalm-suppress MissingReturnType
      *
      * @codingStandardsIgnoreStart
      */
-    final protected function awaitAny(array $promises, ?float $timeout = self::DEFAULT_AWAIT_TIMEOUT)
+    final protected function awaitAny(PromiseInterface ...$promises): mixed
     {
-        return awaitAny($promises, Loop::get(), $timeout);
+        return await(any($promises));
     }
 
     final protected function expectCallableExactly(int $amount): callable
