@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "8e78ea101e161969f4a4743b889fb474",
+    "content-hash": "01a118cef8bf0ea33723be6a0e5b9996",
     "packages": [
         {
             "name": "amphp/amp",
@@ -3636,16 +3636,16 @@
         },
         {
             "name": "orklah/psalm-insane-comparison",
-            "version": "v2.1.0",
+            "version": "v2.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/orklah/psalm-insane-comparison.git",
-                "reference": "cb0e968ed75be66224a0a282d25be8cd20c67892"
+                "reference": "f0e44bf31678d189c8ee4556598d0ad6e3f853c9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/orklah/psalm-insane-comparison/zipball/cb0e968ed75be66224a0a282d25be8cd20c67892",
-                "reference": "cb0e968ed75be66224a0a282d25be8cd20c67892",
+                "url": "https://api.github.com/repos/orklah/psalm-insane-comparison/zipball/f0e44bf31678d189c8ee4556598d0ad6e3f853c9",
+                "reference": "f0e44bf31678d189c8ee4556598d0ad6e3f853c9",
                 "shasum": ""
             },
             "require": {
@@ -3684,9 +3684,9 @@
             "description": "Detects possible insane comparison (\"string\" == 0) to help migrate to PHP8",
             "support": {
                 "issues": "https://github.com/orklah/psalm-insane-comparison/issues",
-                "source": "https://github.com/orklah/psalm-insane-comparison/tree/v2.1.0"
+                "source": "https://github.com/orklah/psalm-insane-comparison/tree/v2.2.0"
             },
-            "time": "2022-12-05T19:41:08+00:00"
+            "time": "2023-01-06T09:06:11+00:00"
         },
         {
             "name": "pepakriz/phpstan-exception-rules",
@@ -9726,16 +9726,16 @@
         },
         {
             "name": "wyrihaximus/test-utilities",
-            "version": "5.2.3",
+            "version": "5.2.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/WyriHaximus/php-test-utilities.git",
-                "reference": "0c666a0f7937f195c8333741acd47ce6013dfd96"
+                "reference": "1a63e5dfcf650f16477104a5e54fe63c28a0cde0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/WyriHaximus/php-test-utilities/zipball/0c666a0f7937f195c8333741acd47ce6013dfd96",
-                "reference": "0c666a0f7937f195c8333741acd47ce6013dfd96",
+                "url": "https://api.github.com/repos/WyriHaximus/php-test-utilities/zipball/1a63e5dfcf650f16477104a5e54fe63c28a0cde0",
+                "reference": "1a63e5dfcf650f16477104a5e54fe63c28a0cde0",
                 "shasum": ""
             },
             "require": {
@@ -9745,7 +9745,7 @@
                 "jakobbuis/simple-slow-test-reporter": "^1.0",
                 "maglnet/composer-require-checker": "^4.4.0",
                 "nunomaduro/collision": "^6.4.0",
-                "orklah/psalm-insane-comparison": "^2.1.0",
+                "orklah/psalm-insane-comparison": "^2.2.0",
                 "php": "^8",
                 "php-coveralls/php-coveralls": "^2.5.3",
                 "php-parallel-lint/php-console-highlighter": "^1.0",
@@ -9806,7 +9806,7 @@
             "description": "🛠️ Test utilities for api-clients packages",
             "support": {
                 "issues": "https://github.com/WyriHaximus/php-test-utilities/issues",
-                "source": "https://github.com/WyriHaximus/php-test-utilities/tree/5.2.3"
+                "source": "https://github.com/WyriHaximus/php-test-utilities/tree/5.2.4"
             },
             "funding": [
                 {
@@ -9814,7 +9814,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2023-01-05T23:14:51+00:00"
+            "time": "2023-01-07T21:34:04+00:00"
         }
     ],
     "packages-dev": [

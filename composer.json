@@ -14,7 +14,7 @@
     "phpunit/phpunit": "^9.5.27",
     "react/event-loop": "^1.3.0",
     "react/promise": "^2.9.",
-    "wyrihaximus/test-utilities": "^5.2.3"
+    "wyrihaximus/test-utilities": "^5.2.4"
   },
   "require-dev": {
     "wyrihaximus/iterator-or-array-to-array": "^1.2"
