@@ -22,6 +22,7 @@ abstract class AsyncTestCase extends TestCase
      * @psalm-suppress MissingReturnType
      *
      * @codingStandardsIgnoreStart
+     * @deprecated Use \React\Async\await directly
      */
     final protected function await(PromiseInterface $promise): mixed
     {
@@ -30,6 +31,7 @@ abstract class AsyncTestCase extends TestCase
 
     /**
      * @return array<mixed>
+     * @deprecated Use \React\Async\await and \React\Promise\all directly
      */
     final protected function awaitAll(PromiseInterface ...$promises): array
     {
@@ -43,6 +45,7 @@ abstract class AsyncTestCase extends TestCase
      * @psalm-suppress MissingReturnType
      *
      * @codingStandardsIgnoreStart
+     * @deprecated Use \React\Async\await and \React\Promise\any directly
      */
     final protected function awaitAny(PromiseInterface ...$promises): mixed
     {
