@@ -14,7 +14,7 @@
     "react/async": "^4.0",
     "react/event-loop": "^1.3.0",
     "react/promise": "^2.9.",
-    "wyrihaximus/test-utilities": "^5.3.1"
+    "wyrihaximus/test-utilities": "^5.4.0"
   },
   "require-dev": {
     "wyrihaximus/iterator-or-array-to-array": "^1.2"
