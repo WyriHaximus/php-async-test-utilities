@@ -10,9 +10,7 @@ use WyriHaximus\AsyncTestUtilities\TimeOut;
 
 use function React\Async\async;
 use function React\Async\await;
-use function React\Promise\resolve;
 use function React\Promise\Timer\sleep;
-use function time;
 
 #[TimeOut(1)]
 final class AsyncTestCaseTest extends AsyncTestCase
@@ -29,24 +27,6 @@ final class AsyncTestCaseTest extends AsyncTestCase
         await(sleep(0.01));
 
         echo 'b';
-    }
-
-    public function testAwait(): void
-    {
-        $value = time();
-        static::assertSame($value, $this->await(resolve($value)));
-    }
-
-    public function testAwaitAll(): void
-    {
-        $value = time();
-        static::assertSame([$value, $value], $this->awaitAll(resolve($value), resolve($value)));
-    }
-
-    public function testAwaitAny(): void
-    {
-        $value = time();
-        static::assertSame($value, $this->awaitAny(resolve($value), resolve($value)));
     }
 
     public function testExpectCallableExactly(): void
