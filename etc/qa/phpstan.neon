@@ -7,6 +7,8 @@ parameters:
 		- '#Method WyriHaximus\\AsyncTestUtilities\\CallableStub::__invoke\(\) is not final, but since the containing class is abstract, it should be.#'
 		- '#Parameter \#1 \$name of method ReflectionClass\<\$this\(WyriHaximus\\AsyncTestUtilities\\AsyncTestCase\)\>::getMethod\(\) expects string, string\|null given.#'
 		- '#Call to an undefined method React\\Promise\\PromiseInterface\<mixed\>::always\(\).#'
+		- '#Call to deprecated method expectCallableExactly\(\)#'
+		- '#Call to deprecated method expectCallableOnce\(\)#'
 	ergebnis:
 		classesAllowedToBeExtended:
 			- WyriHaximus\AsyncTestUtilities\AsyncTestCase

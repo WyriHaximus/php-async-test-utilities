@@ -18,16 +18,25 @@ abstract class AsyncTestCase extends TestCase
 
     private ?string $realTestName = null;
 
+    /**
+     * @deprecated With the move to fibers there is no need for these rarely used methods anymore. (Unless proven otherwise of course.)
+     */
     final protected function expectCallableExactly(int $amount): callable
     {
         return $this->getCallableMock(self::exactly($amount));
     }
 
+    /**
+     * @deprecated With the move to fibers there is no need for these rarely used methods anymore. (Unless proven otherwise of course.)
+     */
     final protected function expectCallableOnce(): callable
     {
         return $this->getCallableMock(self::once());
     }
 
+    /**
+     * @deprecated With the move to fibers there is no need for these rarely used methods anymore. (Unless proven otherwise of course.)
+     */
     final protected function expectCallableNever(): callable
     {
         return $this->getCallableMock(self::never());
