@@ -6,55 +6,17 @@ namespace WyriHaximus\AsyncTestUtilities;
 
 use PHPUnit\Framework\MockObject\Rule\InvokedCount;
 use React\EventLoop\Loop;
-use React\Promise\PromiseInterface;
+use ReflectionClass;
 use WyriHaximus\TestUtilities\TestCase;
 
 use function React\Async\async;
 use function React\Async\await;
-use function React\Promise\all;
-use function React\Promise\any;
 
 abstract class AsyncTestCase extends TestCase
 {
     private const INVOKE_ARRAY = ['__invoke'];
 
     private ?string $realTestName = null;
-
-    /**
-     * @return mixed returns whatever the promise resolves to
-     *
-     * @psalm-suppress MissingReturnType
-     *
-     * @codingStandardsIgnoreStart
-     * @deprecated Use \React\Async\await directly
-     */
-    final protected function await(PromiseInterface $promise): mixed
-    {
-        return await($promise);
-    }
-
-    /**
-     * @return array<mixed>
-     * @deprecated Use \React\Async\await and \React\Promise\all directly
-     */
-    final protected function awaitAll(PromiseInterface ...$promises): array
-    {
-        /** @var array<mixed> */
-        return await(all($promises));
-    }
-
-    /**
-     * @return mixed
-     *
-     * @psalm-suppress MissingReturnType
-     *
-     * @codingStandardsIgnoreStart
-     * @deprecated Use \React\Async\await and \React\Promise\any directly
-     */
-    final protected function awaitAny(PromiseInterface ...$promises): mixed
-    {
-        return await(any($promises));
-    }
 
     final protected function expectCallableExactly(int $amount): callable
     {
@@ -104,23 +66,28 @@ abstract class AsyncTestCase extends TestCase
          * @psalm-suppress PossiblyNullArgument
          */
         parent::setName($this->realTestName);
-        $timeout = 30;
-        $reflectionClass = new \ReflectionClass($this::class);
+        $timeout         = 30;
+        $reflectionClass = new ReflectionClass($this::class);
         foreach ($reflectionClass->getAttributes() as $classAttribute) {
             $classTimeout = $classAttribute->newInstance();
-            if ($classTimeout instanceof TimeOut) {
-                $timeout = $classTimeout->timeout;
+            if (! ($classTimeout instanceof TimeOut)) {
+                continue;
             }
+
+            $timeout = $classTimeout->timeout;
         }
+
         /**
          * @psalm-suppress InternalMethod
          * @psalm-suppress PossiblyNullArgument
          */
         foreach ($reflectionClass->getMethod($this->realTestName)->getAttributes() as $methodAttribute) {
             $methodTimeout = $methodAttribute->newInstance();
-            if ($methodTimeout instanceof TimeOut) {
-                $timeout = $methodTimeout->timeout;
+            if (! ($methodTimeout instanceof TimeOut)) {
+                continue;
             }
+
+            $timeout = $methodTimeout->timeout;
         }
 
         $timeout = Loop::addTimer($timeout, static fn () => Loop::stop());
@@ -140,6 +107,7 @@ abstract class AsyncTestCase extends TestCase
          * @psalm-suppress InternalMethod
          */
         parent::setName('runAsyncTest');
+
         return parent::runTest();
     }
 }
