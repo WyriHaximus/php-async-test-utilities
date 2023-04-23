@@ -17,13 +17,67 @@ composer require wyrihaximus/async-test-utilities
 
 # Usage
 
-Any test file can extend `WyriHaximus\AsyncTestUtilities\TestCase` and it comes with some goodies such as random namespaces and random directories to use for file storage related tests.
+Any test file can extend `WyriHaximus\AsyncTestUtilities\TestCase` and it comes with some goodies such as random
+namespaces and random directories to use for file storage related tests.
+
+Since all tests are executed inside a fiber, there is a default timeout of `30` seconds. To lower or raise that timeout
+this package comes with a `TimeOut` attribute. It can be set on the class and method level. When set on both the method level it takes priority over the class level.
+
+```php
+<?php
+
+declare(strict_types=1);
+
+namespace WyriHaximus\Tests\AsyncTestUtilities;
+
+use React\EventLoop\Loop;
+use WyriHaximus\AsyncTestUtilities\AsyncTestCase;
+use WyriHaximus\AsyncTestUtilities\TimeOut;
+
+use function React\Async\async;
+use function React\Async\await;
+use function React\Promise\resolve;
+use function React\Promise\Timer\sleep;
+use function time;
+
+#[TimeOut(0.3)]
+final class AsyncTestCaseTest extends AsyncTestCase
+{
+    #[TimeOut(1)]
+    public function testAllTestsAreRanInAFiber(): void
+    {
+        self::expectOutputString('ab');
+
+        Loop::futureTick(async(static function (): void {
+            echo 'a';
+        }));
+
+        await(sleep(1));
+
+        echo 'b';
+    }
+
+    public function testExpectCallableExactly(): void
+    {
+        $callable = $this->expectCallableExactly(3);
+
+        Loop::futureTick($callable);
+        Loop::futureTick($callable);
+        Loop::futureTick($callable);
+    }
+
+    public function testExpectCallableOnce(): void
+    {
+        Loop::futureTick($this->expectCallableOnce());
+    }
+}
+```
 
 # License
 
 The MIT License (MIT)
 
-Copyright (c) 2021 Cees-Jan Kiewiet
+Copyright (c) 2023 Cees-Jan Kiewiet
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
