@@ -10,8 +10,9 @@ parameters:
 		- '#Call to deprecated method expectCallableExactly\(\)#'
 		- '#Call to deprecated method expectCallableOnce\(\)#'
 	ergebnis:
-		classesAllowedToBeExtended:
-			- WyriHaximus\AsyncTestUtilities\AsyncTestCase
+		noExtends:
+			classesAllowedToBeExtended:
+				- WyriHaximus\AsyncTestUtilities\AsyncTestCase
 
 includes:
 	- ../../vendor/wyrihaximus/test-utilities/rules.neon
