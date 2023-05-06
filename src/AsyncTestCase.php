@@ -16,27 +16,21 @@ abstract class AsyncTestCase extends TestCase
 {
     private const INVOKE_ARRAY = ['__invoke'];
 
-    private ?string $realTestName = null;
+    private string|null $realTestName = null;
 
-    /**
-     * @deprecated With the move to fibers there is no need for these rarely used methods anymore. (Unless proven otherwise of course.)
-     */
+    /** @deprecated With the move to fibers there is no need for these rarely used methods anymore. (Unless proven otherwise of course.) */
     final protected function expectCallableExactly(int $amount): callable
     {
         return $this->getCallableMock(self::exactly($amount));
     }
 
-    /**
-     * @deprecated With the move to fibers there is no need for these rarely used methods anymore. (Unless proven otherwise of course.)
-     */
+    /** @deprecated With the move to fibers there is no need for these rarely used methods anymore. (Unless proven otherwise of course.) */
     final protected function expectCallableOnce(): callable
     {
         return $this->getCallableMock(self::once());
     }
 
-    /**
-     * @deprecated With the move to fibers there is no need for these rarely used methods anymore. (Unless proven otherwise of course.)
-     */
+    /** @deprecated With the move to fibers there is no need for these rarely used methods anymore. (Unless proven otherwise of course.) */
     final protected function expectCallableNever(): callable
     {
         return $this->getCallableMock(self::never());
@@ -55,15 +49,12 @@ abstract class AsyncTestCase extends TestCase
         return $mock;
     }
 
-    /**
-     * @codeCoverageIgnore Invoked before code coverage data is being collected.
-     */
+    /** @codeCoverageIgnore Invoked before code coverage data is being collected. */
     final public function setName(string $name): void
     {
-        /**
-         * @psalm-suppress InternalMethod
-         */
+        /** @psalm-suppress InternalMethod */
         parent::setName($name);
+
         $this->realTestName = $name;
     }
 
@@ -75,6 +66,7 @@ abstract class AsyncTestCase extends TestCase
          * @psalm-suppress PossiblyNullArgument
          */
         parent::setName($this->realTestName);
+
         $timeout         = 30;
         $reflectionClass = new ReflectionClass($this::class);
         foreach ($reflectionClass->getAttributes() as $classAttribute) {
@@ -112,9 +104,7 @@ abstract class AsyncTestCase extends TestCase
 
     final protected function runTest(): mixed
     {
-        /**
-         * @psalm-suppress InternalMethod
-         */
+        /** @psalm-suppress InternalMethod */
         parent::setName('runAsyncTest');
 
         return parent::runTest();

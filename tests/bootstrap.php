@@ -12,6 +12,6 @@ if (
         XDEBUG_PATH_WHITELIST,
         [
             dirname(__DIR__) . DIRECTORY_SEPARATOR . 'src',
-        ]
+        ],
     );
 }
