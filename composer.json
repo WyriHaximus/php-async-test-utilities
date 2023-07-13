@@ -11,7 +11,7 @@
   "require": {
     "php": "^8.2",
     "phpunit/phpunit": "^9.6.9",
-    "react/async": "^4.0",
+    "react/async": "^4.1.0",
     "react/event-loop": "^1.4.0",
     "react/promise": "^2.10.",
     "wyrihaximus/test-utilities": "^5.5.4 || ^6"
