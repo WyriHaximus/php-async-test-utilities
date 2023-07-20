@@ -17,7 +17,7 @@
     "wyrihaximus/test-utilities": "^5.5.4 || ^6"
   },
   "require-dev": {
-    "react/promise-timer": "^1.9",
+    "react/promise-timer": "^1.10.0",
     "wyrihaximus/iterator-or-array-to-array": "^1.2"
   },
   "autoload": {
