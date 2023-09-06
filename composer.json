@@ -20,6 +20,9 @@
     "react/promise-timer": "^1.10.0",
     "wyrihaximus/iterator-or-array-to-array": "^1.2"
   },
+  "conflict": {
+    "composer/compoer": "<2.6.0"
+  },
   "autoload": {
     "psr-4": {
       "WyriHaximus\\AsyncTestUtilities\\": "src/"
