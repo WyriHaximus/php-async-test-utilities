@@ -93,13 +93,17 @@ abstract class AsyncTestCase extends TestCase
 
         $timeout = Loop::addTimer($timeout, static fn () => Loop::stop());
 
-        /**
-         * @psalm-suppress MixedArgument
-         * @psalm-suppress UndefinedInterfaceMethod
-         */
-        return await(async(
-            fn (): mixed => ([$this, $this->realTestName])(...$args),
-        )()->always(static fn () => Loop::cancelTimer($timeout)));
+        try {
+            /**
+             * @psalm-suppress MixedArgument
+             * @psalm-suppress UndefinedInterfaceMethod
+             */
+            return await(async(
+                fn (): mixed => ([$this, $this->realTestName])(...$args),
+            )());
+        } finally {
+            Loop::cancelTimer($timeout);
+        }
     }
 
     final protected function runTest(): mixed
