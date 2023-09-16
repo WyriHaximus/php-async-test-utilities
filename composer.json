@@ -10,7 +10,7 @@
   ],
   "require": {
     "php": "^8.2",
-    "phpunit/phpunit": "^9.6.10",
+    "phpunit/phpunit": "^9.6.12",
     "react/async": "^4.1.0",
     "react/event-loop": "^1.4.0",
     "react/promise": "^2.10 || ^3.0",
