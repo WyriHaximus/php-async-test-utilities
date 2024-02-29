@@ -6,3 +6,4 @@ parameters:
 
 includes:
 	- ../test-utilities/rules.neon
+	- ../phpstan-react/phpstan-reactphp-rules.neon
