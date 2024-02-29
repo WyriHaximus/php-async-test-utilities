@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "278c3e8f0d4f12234f0f7a58ca5ef85e",
+    "content-hash": "160918eda2b2d3d09e1f164696427151",
     "packages": [
         {
             "name": "amphp/amp",
@@ -9903,6 +9903,51 @@
                 }
             ],
             "time": "2023-05-06T11:54:10+00:00"
+        },
+        {
+            "name": "wyrihaximus/phpstan-react",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/WyriHaximus/phpstan-reactphp.git",
+                "reference": "da07f594ea52390771aefbd3c5d850219aa75e64"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/WyriHaximus/phpstan-reactphp/zipball/da07f594ea52390771aefbd3c5d850219aa75e64",
+                "reference": "da07f594ea52390771aefbd3c5d850219aa75e64",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^8.2"
+            },
+            "require-dev": {
+                "nikic/php-parser": "^4.18",
+                "phpstan/phpdoc-parser": "^1.24",
+                "wyrihaximus/test-utilities": "^5.6"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "WyriHaximus\\React\\PHPStan\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "👎 ReactPHP extension for PHPStan",
+            "support": {
+                "issues": "https://github.com/WyriHaximus/phpstan-reactphp/issues",
+                "source": "https://github.com/WyriHaximus/phpstan-reactphp/tree/1.0.0"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/WyriHaximus",
+                    "type": "github"
+                }
+            ],
+            "time": "2024-02-29T20:19:44+00:00"
         },
         {
             "name": "wyrihaximus/phpstan-rules-wrapper",
