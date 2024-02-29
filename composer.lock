@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "2357271eb08c014dcb191f0ed32e8d66",
+    "content-hash": "089c77c68a181c83d49633592fa31071",
     "packages": [
         {
             "name": "amphp/amp",
@@ -4788,6 +4788,7 @@
                 "issues": "https://github.com/phpstan/phpstan-php-parser/issues",
                 "source": "https://github.com/phpstan/phpstan-php-parser/tree/1.1.0"
             },
+            "abandoned": true,
             "time": "2021-12-16T19:43:32+00:00"
         },
         {
@@ -5829,24 +5830,24 @@
         },
         {
             "name": "react/promise",
-            "version": "v3.0.0",
+            "version": "v3.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/reactphp/promise.git",
-                "reference": "c86753c76fd3be465d93b308f18d189f01a22be4"
+                "reference": "e563d55d1641de1dea9f5e84f3cccc66d2bfe02c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/reactphp/promise/zipball/c86753c76fd3be465d93b308f18d189f01a22be4",
-                "reference": "c86753c76fd3be465d93b308f18d189f01a22be4",
+                "url": "https://api.github.com/repos/reactphp/promise/zipball/e563d55d1641de1dea9f5e84f3cccc66d2bfe02c",
+                "reference": "e563d55d1641de1dea9f5e84f3cccc66d2bfe02c",
                 "shasum": ""
             },
             "require": {
                 "php": ">=7.1.0"
             },
             "require-dev": {
-                "phpstan/phpstan": "1.10.20 || 1.4.10",
-                "phpunit/phpunit": "^9.5 || ^7.5"
+                "phpstan/phpstan": "1.10.39 || 1.4.10",
+                "phpunit/phpunit": "^9.6 || ^7.5"
             },
             "type": "library",
             "autoload": {
@@ -5890,7 +5891,7 @@
             ],
             "support": {
                 "issues": "https://github.com/reactphp/promise/issues",
-                "source": "https://github.com/reactphp/promise/tree/v3.0.0"
+                "source": "https://github.com/reactphp/promise/tree/v3.1.0"
             },
             "funding": [
                 {
@@ -5898,7 +5899,7 @@
                     "type": "open_collective"
                 }
             ],
-            "time": "2023-07-11T16:12:49+00:00"
+            "time": "2023-11-16T16:21:57+00:00"
         },
         {
             "name": "revolt/event-loop",
@@ -7599,12 +7600,12 @@
             "version": "3.7.2",
             "source": {
                 "type": "git",
-                "url": "https://github.com/squizlabs/PHP_CodeSniffer.git",
+                "url": "https://github.com/PHPCSStandards/PHP_CodeSniffer.git",
                 "reference": "ed8e00df0a83aa96acf703f8c2979ff33341f879"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/squizlabs/PHP_CodeSniffer/zipball/ed8e00df0a83aa96acf703f8c2979ff33341f879",
+                "url": "https://api.github.com/repos/PHPCSStandards/PHP_CodeSniffer/zipball/ed8e00df0a83aa96acf703f8c2979ff33341f879",
                 "reference": "ed8e00df0a83aa96acf703f8c2979ff33341f879",
                 "shasum": ""
             },
@@ -7649,6 +7650,20 @@
                 "source": "https://github.com/squizlabs/PHP_CodeSniffer",
                 "wiki": "https://github.com/squizlabs/PHP_CodeSniffer/wiki"
             },
+            "funding": [
+                {
+                    "url": "https://github.com/PHPCSStandards",
+                    "type": "github"
+                },
+                {
+                    "url": "https://github.com/jrfnl",
+                    "type": "github"
+                },
+                {
+                    "url": "https://opencollective.com/php_codesniffer",
+                    "type": "open_collective"
+                }
+            ],
             "time": "2023-02-22T23:07:41+00:00"
         },
         {
@@ -10179,6 +10194,7 @@
                     "type": "github"
                 }
             ],
+            "abandoned": "[...$iteratorOrArray] instead of this",
             "time": "2021-09-05T15:12:30+00:00"
         }
     ],
