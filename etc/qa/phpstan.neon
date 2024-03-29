@@ -2,10 +2,7 @@ parameters:
 	excludePaths:
 		- tests/bootstrap.php
 	ignoreErrors:
-		- '#Parameter \#1 \$name of method PHPUnit\\Framework\\TestCase::setName\(\) expects string, string\|null given.#'
-		- '#Trying to invoke array\{\$this\(WyriHaximus\\AsyncTestUtilities\\AsyncTestCase\), string\|null\} but it might not be a callable.#'
 		- '#Method WyriHaximus\\AsyncTestUtilities\\CallableStub::__invoke\(\) is not final, but since the containing class is abstract, it should be.#'
-		- '#Parameter \#1 \$name of method ReflectionClass\<\$this\(WyriHaximus\\AsyncTestUtilities\\AsyncTestCase\)\>::getMethod\(\) expects string, string\|null given.#'
 		- '#Call to deprecated method expectCallableExactly\(\)#'
 		- '#Call to deprecated method expectCallableOnce\(\)#'
 	ergebnis:
