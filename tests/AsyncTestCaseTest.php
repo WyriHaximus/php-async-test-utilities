@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace WyriHaximus\Tests\AsyncTestUtilities;
 
+use Fiber;
 use React\EventLoop\Loop;
 use WyriHaximus\AsyncTestUtilities\AsyncTestCase;
 use WyriHaximus\AsyncTestUtilities\TimeOut;
@@ -27,6 +28,11 @@ final class AsyncTestCaseTest extends AsyncTestCase
         await(sleep(0.01));
 
         echo 'b';
+    }
+
+    public function testFiberGetCurrentReturnsAFiberInstance(): void
+    {
+        self::assertInstanceOf(Fiber::class, Fiber::getCurrent());
     }
 
     public function testExpectCallableExactly(): void
