@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "52bbf320efce7866a28d60ad0db7fb8f",
+    "content-hash": "0108907d93b5c5b3d948dfb56aeb8a99",
     "packages": [
         {
             "name": "amphp/amp",
@@ -10233,56 +10233,6 @@
                 }
             ],
             "time": "2023-07-20T15:40:28+00:00"
-        },
-        {
-            "name": "wyrihaximus/iterator-or-array-to-array",
-            "version": "1.2.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/WyriHaximus/php-iterator-or-array-to-array.git",
-                "reference": "79b407499a3a82f269e59236e44e2119c7556c78"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/WyriHaximus/php-iterator-or-array-to-array/zipball/79b407499a3a82f269e59236e44e2119c7556c78",
-                "reference": "79b407499a3a82f269e59236e44e2119c7556c78",
-                "shasum": ""
-            },
-            "require": {
-                "php": "^8 || ^7.4"
-            },
-            "require-dev": {
-                "wyrihaximus/test-utilities": "^3.7.3"
-            },
-            "type": "library",
-            "autoload": {
-                "files": [
-                    "src/functions_include.php"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Cees-Jan Kiewiet",
-                    "email": "ceesjank@gmail.com"
-                }
-            ],
-            "description": "Like iterator_to_array but doesn't error when handed an array",
-            "support": {
-                "issues": "https://github.com/WyriHaximus/php-iterator-or-array-to-array/issues",
-                "source": "https://github.com/WyriHaximus/php-iterator-or-array-to-array/tree/1.2.0"
-            },
-            "funding": [
-                {
-                    "url": "https://github.com/WyriHaximus",
-                    "type": "github"
-                }
-            ],
-            "abandoned": "[...$iteratorOrArray] instead of this",
-            "time": "2021-09-05T15:12:30+00:00"
         }
     ],
     "aliases": [],
