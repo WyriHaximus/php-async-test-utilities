@@ -15,6 +15,7 @@
     "react/event-loop": "^1.5.0",
     "react/promise": "^3.1",
     "wyrihaximus/phpstan-react": "^1",
+    "wyrihaximus/react-phpunit-run-tests-in-fiber": "^1.0",
     "wyrihaximus/test-utilities": "^5.5.4 || ^6"
   },
   "require-dev": {

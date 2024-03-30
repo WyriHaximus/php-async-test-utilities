@@ -39,15 +39,13 @@ final class AsyncTestCaseTest extends AsyncTestCase
     {
         $callable = $this->expectCallableExactly(3);
 
-        Loop::futureTick($callable);
-        Loop::futureTick($callable);
-        Loop::futureTick($callable);
-        Loop::run();
+        $callable();
+        $callable();
+        $callable();
     }
 
     public function testExpectCallableOnce(): void
     {
-        Loop::futureTick($this->expectCallableOnce());
-        Loop::run();
+        $this->expectCallableOnce()();
     }
 }

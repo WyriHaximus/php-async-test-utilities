@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "732ddf86f273cdcaa97e8297b6ea241f",
+    "content-hash": "d4242dabf829f2f415c2698fe925336e",
     "packages": [
         {
             "name": "amphp/amp",
@@ -10004,6 +10004,59 @@
                 }
             ],
             "time": "2023-07-22T03:17:18+00:00"
+        },
+        {
+            "name": "wyrihaximus/react-phpunit-run-tests-in-fiber",
+            "version": "1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/WyriHaximus/reactphp-phpunit-run-tests-in-fiber.git",
+                "reference": "bfa65c9b12fbe2735fc76a8f85535ea1117571fb"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/WyriHaximus/reactphp-phpunit-run-tests-in-fiber/zipball/bfa65c9b12fbe2735fc76a8f85535ea1117571fb",
+                "reference": "bfa65c9b12fbe2735fc76a8f85535ea1117571fb",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^8.1",
+                "react/async": "^4.2.0",
+                "react/event-loop": "^1.5.0",
+                "react/promise": "^2.10 || ^3.0"
+            },
+            "require-dev": {
+                "react/promise-timer": "^1.10.0",
+                "wyrihaximus/test-utilities": "^5.2.4"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "WyriHaximus\\React\\PHPUnit\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Cees-Jan Kiewiet",
+                    "email": "ceesjank@gmail.com"
+                }
+            ],
+            "description": "Trait to run all tests in a fiber",
+            "support": {
+                "issues": "https://github.com/WyriHaximus/reactphp-phpunit-run-tests-in-fiber/issues",
+                "source": "https://github.com/WyriHaximus/reactphp-phpunit-run-tests-in-fiber/tree/1.0.1"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/WyriHaximus",
+                    "type": "github"
+                }
+            ],
+            "time": "2024-02-16T19:13:50+00:00"
         },
         {
             "name": "wyrihaximus/test-utilities",
