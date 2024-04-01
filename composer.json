@@ -50,11 +50,6 @@
     },
     "sort-packages": true
   },
-  "extra": {
-    "unused": [
-      "wyrihaximus/phpstan-react"
-    ]
-  },
   "scripts": {
     "post-install-cmd": [
       "composer normalize",
