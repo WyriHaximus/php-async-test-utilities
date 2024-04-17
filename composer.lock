@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "c6b58f7671e49ad5f8266b5c0eae537b",
+    "content-hash": "179aeffa7cc0fb479d92016f82d9c9ec",
     "packages": [
         {
             "name": "amphp/amp",
@@ -5180,16 +5180,16 @@
         },
         {
             "name": "phpstan/phpstan",
-            "version": "1.10.66",
+            "version": "1.10.67",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpstan/phpstan.git",
-                "reference": "94779c987e4ebd620025d9e5fdd23323903950bd"
+                "reference": "16ddbe776f10da6a95ebd25de7c1dbed397dc493"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpstan/phpstan/zipball/94779c987e4ebd620025d9e5fdd23323903950bd",
-                "reference": "94779c987e4ebd620025d9e5fdd23323903950bd",
+                "url": "https://api.github.com/repos/phpstan/phpstan/zipball/16ddbe776f10da6a95ebd25de7c1dbed397dc493",
+                "reference": "16ddbe776f10da6a95ebd25de7c1dbed397dc493",
                 "shasum": ""
             },
             "require": {
@@ -5232,13 +5232,9 @@
                 {
                     "url": "https://github.com/phpstan",
                     "type": "github"
-                },
-                {
-                    "url": "https://tidelift.com/funding/github/packagist/phpstan/phpstan",
-                    "type": "tidelift"
                 }
             ],
-            "time": "2024-03-28T16:17:31+00:00"
+            "time": "2024-04-16T07:22:02+00:00"
         },
         {
             "name": "phpstan/phpstan-deprecation-rules",
@@ -11129,16 +11125,16 @@
         },
         {
             "name": "wyrihaximus/test-utilities",
-            "version": "6.0.4",
+            "version": "6.0.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/WyriHaximus/php-test-utilities.git",
-                "reference": "803bd93031853df82ee340991cec98aa25910691"
+                "reference": "634f233e3ec530f43b288986b02f6b5388d7a460"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/WyriHaximus/php-test-utilities/zipball/803bd93031853df82ee340991cec98aa25910691",
-                "reference": "803bd93031853df82ee340991cec98aa25910691",
+                "url": "https://api.github.com/repos/WyriHaximus/php-test-utilities/zipball/634f233e3ec530f43b288986b02f6b5388d7a460",
+                "reference": "634f233e3ec530f43b288986b02f6b5388d7a460",
                 "shasum": ""
             },
             "require": {
@@ -11156,8 +11152,8 @@
                 "php-parallel-lint/php-console-highlighter": "^1.0",
                 "php-parallel-lint/php-parallel-lint": "^1.4.0",
                 "php-standard-library/psalm-plugin": "^1.1.5 || ^2.2.1",
-                "phpstan/phpstan": "^1.10.66",
-                "phpunit/phpunit": "^10.5.18",
+                "phpstan/phpstan": "^1.10.67",
+                "phpunit/phpunit": "^10.5.19",
                 "psalm/plugin-mockery": "^1.1",
                 "psalm/plugin-phpunit": "^0.19.0",
                 "roave/backward-compatibility-check": "^8.6.0",
@@ -11191,7 +11187,7 @@
             "description": "🛠️ Test utilities for api-clients packages",
             "support": {
                 "issues": "https://github.com/WyriHaximus/php-test-utilities/issues",
-                "source": "https://github.com/WyriHaximus/php-test-utilities/tree/6.0.4"
+                "source": "https://github.com/WyriHaximus/php-test-utilities/tree/6.0.5"
             },
             "funding": [
                 {
@@ -11199,7 +11195,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2024-04-15T11:19:08+00:00"
+            "time": "2024-04-17T21:39:18+00:00"
         }
     ],
     "packages-dev": [
