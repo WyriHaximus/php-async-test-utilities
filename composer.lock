@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "efdf47b2c04651be8d762fca38bd0b99",
+    "content-hash": "55c700754d292edacf23cd79ed85cc52",
     "packages": [
         {
             "name": "amphp/amp",
@@ -768,16 +768,16 @@
         },
         {
             "name": "composer/composer",
-            "version": "2.7.3",
+            "version": "2.7.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/composer/composer.git",
-                "reference": "e49be96f3bccd183c9ff1313686c06cf898ba4be"
+                "reference": "a625e50598e12171d3f60b1149eb530690c43474"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/composer/composer/zipball/e49be96f3bccd183c9ff1313686c06cf898ba4be",
-                "reference": "e49be96f3bccd183c9ff1313686c06cf898ba4be",
+                "url": "https://api.github.com/repos/composer/composer/zipball/a625e50598e12171d3f60b1149eb530690c43474",
+                "reference": "a625e50598e12171d3f60b1149eb530690c43474",
                 "shasum": ""
             },
             "require": {
@@ -862,7 +862,7 @@
                 "irc": "ircs://irc.libera.chat:6697/composer",
                 "issues": "https://github.com/composer/composer/issues",
                 "security": "https://github.com/composer/composer/security/policy",
-                "source": "https://github.com/composer/composer/tree/2.7.3"
+                "source": "https://github.com/composer/composer/tree/2.7.4"
             },
             "funding": [
                 {
@@ -878,7 +878,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2024-04-19T19:40:57+00:00"
+            "time": "2024-04-22T19:17:03+00:00"
         },
         {
             "name": "composer/metadata-minifier",
@@ -5758,16 +5758,16 @@
         },
         {
             "name": "phpunit/phpunit",
-            "version": "10.5.19",
+            "version": "10.5.20",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/phpunit.git",
-                "reference": "c726f0de022368f6ed103e452a765d3304a996a4"
+                "reference": "547d314dc24ec1e177720d45c6263fb226cc2ae3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/c726f0de022368f6ed103e452a765d3304a996a4",
-                "reference": "c726f0de022368f6ed103e452a765d3304a996a4",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/547d314dc24ec1e177720d45c6263fb226cc2ae3",
+                "reference": "547d314dc24ec1e177720d45c6263fb226cc2ae3",
                 "shasum": ""
             },
             "require": {
@@ -5839,7 +5839,7 @@
             "support": {
                 "issues": "https://github.com/sebastianbergmann/phpunit/issues",
                 "security": "https://github.com/sebastianbergmann/phpunit/security/policy",
-                "source": "https://github.com/sebastianbergmann/phpunit/tree/10.5.19"
+                "source": "https://github.com/sebastianbergmann/phpunit/tree/10.5.20"
             },
             "funding": [
                 {
@@ -5855,7 +5855,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2024-04-17T14:06:18+00:00"
+            "time": "2024-04-24T06:32:35+00:00"
         },
         {
             "name": "psalm/plugin-mockery",
@@ -8404,16 +8404,16 @@
         },
         {
             "name": "squizlabs/php_codesniffer",
-            "version": "3.9.1",
+            "version": "3.9.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/PHPCSStandards/PHP_CodeSniffer.git",
-                "reference": "267a4405fff1d9c847134db3a3c92f1ab7f77909"
+                "reference": "aac1f6f347a5c5ac6bc98ad395007df00990f480"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/PHPCSStandards/PHP_CodeSniffer/zipball/267a4405fff1d9c847134db3a3c92f1ab7f77909",
-                "reference": "267a4405fff1d9c847134db3a3c92f1ab7f77909",
+                "url": "https://api.github.com/repos/PHPCSStandards/PHP_CodeSniffer/zipball/aac1f6f347a5c5ac6bc98ad395007df00990f480",
+                "reference": "aac1f6f347a5c5ac6bc98ad395007df00990f480",
                 "shasum": ""
             },
             "require": {
@@ -8480,7 +8480,7 @@
                     "type": "open_collective"
                 }
             ],
-            "time": "2024-03-31T21:03:09+00:00"
+            "time": "2024-04-23T20:25:34+00:00"
         },
         {
             "name": "symfony/config",
@@ -11125,16 +11125,16 @@
         },
         {
             "name": "wyrihaximus/test-utilities",
-            "version": "6.0.6",
+            "version": "6.0.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/WyriHaximus/php-test-utilities.git",
-                "reference": "3d7ee47e49409af1df3eda300b7d419d08e5f9be"
+                "reference": "701bdbd994a56e6bd151098ba9219895bac994c7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/WyriHaximus/php-test-utilities/zipball/3d7ee47e49409af1df3eda300b7d419d08e5f9be",
-                "reference": "3d7ee47e49409af1df3eda300b7d419d08e5f9be",
+                "url": "https://api.github.com/repos/WyriHaximus/php-test-utilities/zipball/701bdbd994a56e6bd151098ba9219895bac994c7",
+                "reference": "701bdbd994a56e6bd151098ba9219895bac994c7",
                 "shasum": ""
             },
             "require": {
@@ -11153,12 +11153,12 @@
                 "php-parallel-lint/php-parallel-lint": "^1.4.0",
                 "php-standard-library/psalm-plugin": "^1.1.5 || ^2.2.1",
                 "phpstan/phpstan": "^1.10.67",
-                "phpunit/phpunit": "^10.5.19",
+                "phpunit/phpunit": "^10.5.20",
                 "psalm/plugin-mockery": "^1.1",
                 "psalm/plugin-phpunit": "^0.19.0",
                 "roave/backward-compatibility-check": "^8.6.0",
                 "roave/infection-static-analysis-plugin": "^1.33.0",
-                "squizlabs/php_codesniffer": "^3.9.1",
+                "squizlabs/php_codesniffer": "^3.9.2",
                 "thecodingmachine/safe": "^2.5.0",
                 "vimeo/psalm": "^5.23.1",
                 "wyrihaximus/coding-standard": "^2.14.0",
@@ -11187,7 +11187,7 @@
             "description": "🛠️ Test utilities for api-clients packages",
             "support": {
                 "issues": "https://github.com/WyriHaximus/php-test-utilities/issues",
-                "source": "https://github.com/WyriHaximus/php-test-utilities/tree/6.0.6"
+                "source": "https://github.com/WyriHaximus/php-test-utilities/tree/6.0.7"
             },
             "funding": [
                 {
@@ -11195,7 +11195,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2024-04-22T00:56:54+00:00"
+            "time": "2024-04-25T11:09:56+00:00"
         }
     ],
     "packages-dev": [
