@@ -10,13 +10,13 @@
   ],
   "require": {
     "php": "^8.2",
-    "phpunit/phpunit": "^10.5.24",
+    "phpunit/phpunit": "^10.5.25",
     "react/async": "^4.3.0",
     "react/event-loop": "^1.5.0",
     "react/promise": "^3.2.0",
     "wyrihaximus/phpstan-react": "^1",
     "wyrihaximus/react-phpunit-run-tests-in-fiber": "^2.0.0",
-    "wyrihaximus/test-utilities": "^6.0.8"
+    "wyrihaximus/test-utilities": "^6.0.9"
   },
   "require-dev": {
     "react/promise-timer": "^1.11.0"
