@@ -1,11 +1,8 @@
 parameters:
-	excludePaths:
-		- tests/bootstrap.php
 	ergebnis:
 		noExtends:
 			classesAllowedToBeExtended:
 				- WyriHaximus\AsyncTestUtilities\AsyncTestCase
 
 includes:
-	- ../../vendor/wyrihaximus/test-utilities/rules.neon
 	- ../../vendor/wyrihaximus/phpstan-react/phpstan-reactphp-rules.neon
