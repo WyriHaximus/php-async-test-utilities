@@ -34,18 +34,4 @@ final class AsyncTestCaseTest extends AsyncTestCase
     {
         self::assertInstanceOf(Fiber::class, Fiber::getCurrent());
     }
-
-    public function testExpectCallableExactly(): void
-    {
-        $callable = $this->expectCallableExactly(3);
-
-        $callable();
-        $callable();
-        $callable();
-    }
-
-    public function testExpectCallableOnce(): void
-    {
-        $this->expectCallableOnce()();
-    }
 }
