@@ -3,6 +3,3 @@ parameters:
 		noExtends:
 			classesAllowedToBeExtended:
 				- WyriHaximus\AsyncTestUtilities\AsyncTestCase
-
-includes:
-	- ../../vendor/wyrihaximus/phpstan-react/phpstan-reactphp-rules.neon
