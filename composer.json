@@ -50,6 +50,13 @@
     },
     "sort-packages": true
   },
+  "extra": {
+    "phpstan": {
+      "includes": [
+        "extension.neon"
+      ]
+    }
+  },
   "scripts": {
     "post-install-cmd": [
       "composer normalize",
