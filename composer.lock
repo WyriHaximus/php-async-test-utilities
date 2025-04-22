@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "7de4c2b3a71744728c758864ecc10ce7",
+    "content-hash": "48255992167ccb0f94fe0e0a8b1ca29a",
     "packages": [
         {
             "name": "azjezz/psl",
@@ -6473,23 +6473,25 @@
         },
         {
             "name": "shipmonk/dead-code-detector",
-            "version": "0.9.2",
+            "version": "0.11.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/shipmonk-rnd/dead-code-detector.git",
-                "reference": "a4fef66901d2e282ccf4ff1e60ea2c922046059a"
+                "reference": "337b299d0e56d0727f2dd537fad0e2b166574f16"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/shipmonk-rnd/dead-code-detector/zipball/a4fef66901d2e282ccf4ff1e60ea2c922046059a",
-                "reference": "a4fef66901d2e282ccf4ff1e60ea2c922046059a",
+                "url": "https://api.github.com/repos/shipmonk-rnd/dead-code-detector/zipball/337b299d0e56d0727f2dd537fad0e2b166574f16",
+                "reference": "337b299d0e56d0727f2dd537fad0e2b166574f16",
                 "shasum": ""
             },
             "require": {
                 "php": "^7.4 || ^8.0",
-                "phpstan/phpstan": "^2.0"
+                "phpstan/phpstan": "^2.1.9"
             },
             "require-dev": {
+                "composer-runtime-api": "^2.0",
+                "composer/semver": "^3.4",
                 "doctrine/orm": "^2.19 || ^3.0",
                 "editorconfig-checker/editorconfig-checker": "^10.6.0",
                 "ergebnis/composer-normalize": "^2.45.0",
@@ -6506,9 +6508,13 @@
                 "shipmonk/phpstan-rules": "^4.1.0",
                 "slevomat/coding-standard": "^8.16.0",
                 "symfony/contracts": "^2.5 || ^3.0",
+                "symfony/dependency-injection": "^5.4 || ^6.0 || ^7.0",
+                "symfony/doctrine-bridge": "^5.4 || ^6.0 || ^7.0",
                 "symfony/event-dispatcher": "^5.4 || ^6.0 || ^7.0",
                 "symfony/http-kernel": "^5.4 || ^6.0 || ^7.0",
-                "symfony/routing": "^5.4 || ^6.0 || ^7.0"
+                "symfony/routing": "^5.4 || ^6.0 || ^7.0",
+                "symfony/validator": "^5.4 || ^6.0 || ^7.0",
+                "twig/twig": "^3.0"
             },
             "type": "phpstan-extension",
             "extra": {
@@ -6536,9 +6542,9 @@
             ],
             "support": {
                 "issues": "https://github.com/shipmonk-rnd/dead-code-detector/issues",
-                "source": "https://github.com/shipmonk-rnd/dead-code-detector/tree/0.9.2"
+                "source": "https://github.com/shipmonk-rnd/dead-code-detector/tree/0.11.0"
             },
-            "time": "2025-03-07T09:23:22+00:00"
+            "time": "2025-04-04T12:18:36+00:00"
         },
         {
             "name": "shipmonk/phpstan-rules",
@@ -9017,27 +9023,37 @@
         },
         {
             "name": "wyrihaximus/phpstan-react",
-            "version": "1.0.0",
+            "version": "dev-main",
             "source": {
                 "type": "git",
                 "url": "https://github.com/WyriHaximus/phpstan-reactphp.git",
-                "reference": "da07f594ea52390771aefbd3c5d850219aa75e64"
+                "reference": "bbf464bb7f7f84a06ce0a26ca7755b05400a03af"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/WyriHaximus/phpstan-reactphp/zipball/da07f594ea52390771aefbd3c5d850219aa75e64",
-                "reference": "da07f594ea52390771aefbd3c5d850219aa75e64",
+                "url": "https://api.github.com/repos/WyriHaximus/phpstan-reactphp/zipball/bbf464bb7f7f84a06ce0a26ca7755b05400a03af",
+                "reference": "bbf464bb7f7f84a06ce0a26ca7755b05400a03af",
                 "shasum": ""
             },
             "require": {
-                "php": "^8.2"
+                "php": "^8.3"
             },
             "require-dev": {
-                "nikic/php-parser": "^4.18",
-                "phpstan/phpdoc-parser": "^1.24",
-                "wyrihaximus/test-utilities": "^5.6"
+                "jawira/case-converter": "^3.5",
+                "nikic/php-parser": "^5.4.0",
+                "phpstan/phpdoc-parser": "^2.1.0",
+                "wyrihaximus/makefiles": "^0.2.0",
+                "wyrihaximus/test-utilities": "dev-master as 7.0.0"
             },
+            "default-branch": true,
             "type": "library",
+            "extra": {
+                "phpstan": {
+                    "includes": [
+                        "extension.neon"
+                    ]
+                }
+            },
             "autoload": {
                 "psr-4": {
                     "WyriHaximus\\React\\PHPStan\\": "src/"
@@ -9050,7 +9066,7 @@
             "description": "👎 ReactPHP extension for PHPStan",
             "support": {
                 "issues": "https://github.com/WyriHaximus/phpstan-reactphp/issues",
-                "source": "https://github.com/WyriHaximus/phpstan-reactphp/tree/1.0.0"
+                "source": "https://github.com/WyriHaximus/phpstan-reactphp/tree/main"
             },
             "funding": [
                 {
@@ -9058,32 +9074,32 @@
                     "type": "github"
                 }
             ],
-            "time": "2024-02-29T20:19:44+00:00"
+            "time": "2025-04-20T19:41:58+00:00"
         },
         {
             "name": "wyrihaximus/phpstan-rules-wrapper",
-            "version": "10.7.0",
+            "version": "10.8.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/WyriHaximus/php-phpstan-rules-wrapper.git",
-                "reference": "e0dd1dc414e21cfb20204bf9debed533f391856e"
+                "reference": "523301d9eb93b82ae3b03738305d5436fc64ae6d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/WyriHaximus/php-phpstan-rules-wrapper/zipball/e0dd1dc414e21cfb20204bf9debed533f391856e",
-                "reference": "e0dd1dc414e21cfb20204bf9debed533f391856e",
+                "url": "https://api.github.com/repos/WyriHaximus/php-phpstan-rules-wrapper/zipball/523301d9eb93b82ae3b03738305d5436fc64ae6d",
+                "reference": "523301d9eb93b82ae3b03738305d5436fc64ae6d",
                 "shasum": ""
             },
             "require": {
                 "ergebnis/phpstan-rules": "^2.8.0",
                 "php": "^8.3",
                 "phpstan/extension-installer": "^1.4.3",
-                "phpstan/phpstan": "^2.1.8",
+                "phpstan/phpstan": "^2.1.12",
                 "phpstan/phpstan-deprecation-rules": "^2.0.1",
                 "phpstan/phpstan-mockery": "^2.0.0",
-                "phpstan/phpstan-phpunit": "^2.0.4",
-                "phpstan/phpstan-strict-rules": "^2.0.3",
-                "shipmonk/dead-code-detector": "^0.9.2",
+                "phpstan/phpstan-phpunit": "^2.0.6",
+                "phpstan/phpstan-strict-rules": "^2.0.4",
+                "shipmonk/dead-code-detector": "^0.11.0",
                 "shipmonk/phpstan-rules": "^4.1.1",
                 "tomasvotruba/type-coverage": "^2.0.2",
                 "yamadashy/phpstan-friendly-formatter": "^1.2.0"
@@ -9109,7 +9125,7 @@
             "description": "🌯 PHPStan rules wrapper",
             "support": {
                 "issues": "https://github.com/WyriHaximus/php-phpstan-rules-wrapper/issues",
-                "source": "https://github.com/WyriHaximus/php-phpstan-rules-wrapper/tree/10.7.0"
+                "source": "https://github.com/WyriHaximus/php-phpstan-rules-wrapper/tree/10.8.0"
             },
             "funding": [
                 {
@@ -9117,7 +9133,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2025-03-12T22:55:11+00:00"
+            "time": "2025-04-20T13:04:28+00:00"
         },
         {
             "name": "wyrihaximus/react-phpunit-run-tests-in-fiber",
@@ -9452,6 +9468,12 @@
     ],
     "aliases": [
         {
+            "package": "wyrihaximus/phpstan-react",
+            "version": "dev-main",
+            "alias": "2.0.0",
+            "alias_normalized": "2.0.0.0"
+        },
+        {
             "package": "wyrihaximus/react-phpunit-run-tests-in-fiber",
             "version": "dev-main",
             "alias": "3.0.0",
@@ -9466,6 +9488,7 @@
     ],
     "minimum-stability": "stable",
     "stability-flags": {
+        "wyrihaximus/phpstan-react": 20,
         "wyrihaximus/react-phpunit-run-tests-in-fiber": 20,
         "wyrihaximus/test-utilities": 20
     },
@@ -9474,7 +9497,7 @@
     "platform": {
         "php": "^8.3"
     },
-    "platform-dev": {},
+    "platform-dev": [],
     "platform-overrides": {
         "php": "8.3.13"
     },
