@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "e33a8e91a8d5b2bfd304a9cf0ad57913",
+    "content-hash": "7ceddc384d40c36bb32ca972493e3254",
     "packages": [
         {
             "name": "azjezz/psl",
@@ -6766,16 +6766,16 @@
         },
         {
             "name": "squizlabs/php_codesniffer",
-            "version": "3.13.0",
+            "version": "3.13.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/PHPCSStandards/PHP_CodeSniffer.git",
-                "reference": "65ff2489553b83b4597e89c3b8b721487011d186"
+                "reference": "1b71b4dd7e7ef651ac749cea67e513c0c832f4bd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/PHPCSStandards/PHP_CodeSniffer/zipball/65ff2489553b83b4597e89c3b8b721487011d186",
-                "reference": "65ff2489553b83b4597e89c3b8b721487011d186",
+                "url": "https://api.github.com/repos/PHPCSStandards/PHP_CodeSniffer/zipball/1b71b4dd7e7ef651ac749cea67e513c0c832f4bd",
+                "reference": "1b71b4dd7e7ef651ac749cea67e513c0c832f4bd",
                 "shasum": ""
             },
             "require": {
@@ -6846,7 +6846,7 @@
                     "type": "thanks_dev"
                 }
             ],
-            "time": "2025-05-11T03:36:00+00:00"
+            "time": "2025-06-12T15:04:34+00:00"
         },
         {
             "name": "staabm/phpstan-psr3",
@@ -9151,16 +9151,16 @@
         },
         {
             "name": "wyrihaximus/coding-standard",
-            "version": "2.20.0",
+            "version": "2.20.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/WyriHaximus/php-coding-standard.git",
-                "reference": "74a8261a384ad283b2e2ccb67b53d066f684f4b2"
+                "reference": "dee0ea26ededde2ca9570bf3033920a5fe515b50"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/WyriHaximus/php-coding-standard/zipball/74a8261a384ad283b2e2ccb67b53d066f684f4b2",
-                "reference": "74a8261a384ad283b2e2ccb67b53d066f684f4b2",
+                "url": "https://api.github.com/repos/WyriHaximus/php-coding-standard/zipball/dee0ea26ededde2ca9570bf3033920a5fe515b50",
+                "reference": "dee0ea26ededde2ca9570bf3033920a5fe515b50",
                 "shasum": ""
             },
             "require": {
@@ -9168,7 +9168,7 @@
                 "doctrine/coding-standard": "^13.0.1",
                 "php": "^8.2",
                 "slevomat/coding-standard": "^8.19.1",
-                "squizlabs/php_codesniffer": "^3.13.0"
+                "squizlabs/php_codesniffer": "^3.13.1"
             },
             "type": "phpcodesniffer-standard",
             "notification-url": "https://packagist.org/downloads/",
@@ -9178,7 +9178,7 @@
             "description": "WyriHaximus Coding Standard",
             "support": {
                 "issues": "https://github.com/WyriHaximus/php-coding-standard/issues",
-                "source": "https://github.com/WyriHaximus/php-coding-standard/tree/2.20.0"
+                "source": "https://github.com/WyriHaximus/php-coding-standard/tree/2.20.1"
             },
             "funding": [
                 {
@@ -9186,7 +9186,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2025-06-11T17:46:27+00:00"
+            "time": "2025-06-13T15:30:26+00:00"
         },
         {
             "name": "wyrihaximus/phpstan-react",
@@ -9362,16 +9362,16 @@
         },
         {
             "name": "wyrihaximus/test-utilities",
-            "version": "7.5.0",
+            "version": "7.5.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/WyriHaximus/php-test-utilities.git",
-                "reference": "9354258b9e541a6856f37be53a5963c3d42a90b6"
+                "reference": "109aad527356644389fefe1c50ff7b878fb94415"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/WyriHaximus/php-test-utilities/zipball/9354258b9e541a6856f37be53a5963c3d42a90b6",
-                "reference": "9354258b9e541a6856f37be53a5963c3d42a90b6",
+                "url": "https://api.github.com/repos/WyriHaximus/php-test-utilities/zipball/109aad527356644389fefe1c50ff7b878fb94415",
+                "reference": "109aad527356644389fefe1c50ff7b878fb94415",
                 "shasum": ""
             },
             "require": {
@@ -9387,11 +9387,11 @@
                 "php-parallel-lint/php-console-highlighter": "^1.0",
                 "php-parallel-lint/php-parallel-lint": "^1.4.0",
                 "phpstan/phpstan": "^2.1.17",
-                "phpunit/phpunit": "^12.2.1",
+                "phpunit/phpunit": "^12.2.2",
                 "rector/rector": "^2.0.18",
                 "roave/backward-compatibility-check": "^8.14.0",
-                "squizlabs/php_codesniffer": "^3.13.0",
-                "wyrihaximus/coding-standard": "^2.20.0",
+                "squizlabs/php_codesniffer": "^3.13.1",
+                "wyrihaximus/coding-standard": "^2.20.1",
                 "wyrihaximus/phpstan-rules-wrapper": "^10.14.0"
             },
             "conflict": {
@@ -9431,7 +9431,7 @@
             "description": "🛠️ Test utilities for api-clients packages",
             "support": {
                 "issues": "https://github.com/WyriHaximus/php-test-utilities/issues",
-                "source": "https://github.com/WyriHaximus/php-test-utilities/tree/7.5.0"
+                "source": "https://github.com/WyriHaximus/php-test-utilities/tree/7.5.1"
             },
             "funding": [
                 {
@@ -9439,7 +9439,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2025-06-11T18:14:34+00:00"
+            "time": "2025-06-13T16:20:32+00:00"
         },
         {
             "name": "yamadashy/phpstan-friendly-formatter",
