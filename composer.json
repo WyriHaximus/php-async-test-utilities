@@ -9,7 +9,7 @@
     }
   ],
   "require": {
-    "php": "^8.3",
+    "php": "^8.4",
     "phpunit/phpunit": "^12.3.5",
     "react/async": "^4.3.0",
     "react/event-loop": "^1.5.0",
@@ -46,7 +46,7 @@
       "wyrihaximus/makefiles": true
     },
     "platform": {
-      "php": "8.3.13"
+      "php": "8.4.13"
     },
     "sort-packages": true
   },
