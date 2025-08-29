@@ -9,7 +9,7 @@
     }
   ],
   "require": {
-    "php": "^8.4",
+    "php": "^8.4.12",
     "phpunit/phpunit": "^12.3.6",
     "react/async": "^4.3.0",
     "react/event-loop": "^1.5.0",
