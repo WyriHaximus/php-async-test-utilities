@@ -13,8 +13,5 @@
     },
     "mutators": {
         "@default": true
-    },
-    "phpUnit": {
-        "configDir": "./etc/qa/"
     }
 }
