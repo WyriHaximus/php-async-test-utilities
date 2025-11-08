@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace WyriHaximus\Tests\AsyncTestUtilities;
 
 use Fiber;
+use PHPUnit\Framework\Attributes\Test;
 use React\EventLoop\Loop;
 use WyriHaximus\AsyncTestUtilities\AsyncTestCase;
 use WyriHaximus\AsyncTestUtilities\TimeOut;
@@ -17,7 +18,8 @@ use function React\Promise\Timer\sleep;
 final class AsyncTestCaseTest extends AsyncTestCase
 {
     #[TimeOut(0.1)]
-    public function testAllTestsAreRanInAFiber(): void
+    #[Test]
+    public function allTestsAreRanInAFiber(): void
     {
         self::expectOutputString('ab');
 
@@ -30,7 +32,8 @@ final class AsyncTestCaseTest extends AsyncTestCase
         echo 'b';
     }
 
-    public function testFiberGetCurrentReturnsAFiberInstance(): void
+    #[Test]
+    public function fiberGetCurrentReturnsAFiberInstance(): void
     {
         self::assertInstanceOf(Fiber::class, Fiber::getCurrent());
     }
