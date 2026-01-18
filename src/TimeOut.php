@@ -10,6 +10,7 @@ use WyriHaximus\React\PHPUnit\TimeOutInterface;
 #[Attribute(Attribute::TARGET_METHOD | Attribute::TARGET_CLASS)]
 final readonly class TimeOut implements TimeOutInterface
 {
+    /** @api */
     public function __construct(
         public int|float $timeout,
     ) {
