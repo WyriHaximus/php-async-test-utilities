@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "14b3d0fb7be98b097b745aeef02e885a",
+    "content-hash": "72fbd7eaf52a30fd38a38eea4456a2fe",
     "packages": [
         {
             "name": "azjezz/psl",
@@ -9334,16 +9334,16 @@
         },
         {
             "name": "wyrihaximus/test-utilities",
-            "version": "13.0.0",
+            "version": "13.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/WyriHaximus/php-test-utilities.git",
-                "reference": "f86e2819d2491e0bd1027ca10c874fb99afa6148"
+                "reference": "e4980b68709db0c7a03d8fbd4905eec62dd9b102"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/WyriHaximus/php-test-utilities/zipball/f86e2819d2491e0bd1027ca10c874fb99afa6148",
-                "reference": "f86e2819d2491e0bd1027ca10c874fb99afa6148",
+                "url": "https://api.github.com/repos/WyriHaximus/php-test-utilities/zipball/e4980b68709db0c7a03d8fbd4905eec62dd9b102",
+                "reference": "e4980b68709db0c7a03d8fbd4905eec62dd9b102",
                 "shasum": ""
             },
             "require": {
@@ -9406,7 +9406,7 @@
             "description": "🛠️ Test utilities for api-clients packages",
             "support": {
                 "issues": "https://github.com/WyriHaximus/php-test-utilities/issues",
-                "source": "https://github.com/WyriHaximus/php-test-utilities/tree/13.0.0"
+                "source": "https://github.com/WyriHaximus/php-test-utilities/tree/13.1.0"
             },
             "funding": [
                 {
@@ -9414,7 +9414,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2026-06-08T15:29:09+00:00"
+            "time": "2026-06-08T22:56:10+00:00"
         },
         {
             "name": "yamadashy/phpstan-friendly-formatter",
