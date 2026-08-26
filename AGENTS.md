@@ -5,21 +5,22 @@ Before adding an instruction ANYWHERE — AGENTS.mds, rules, agents, skills, hoo
 # Project Instructions
 
 ## Dependencies
-- Install: `make install`
-- Require a new package: `make composer-require "PACKAGENAME"` or `make composer-require "PACKAGENAME --dev"`
+- Install: `make install`.
+- Require a new package: `make composer-require "PACKAGENAME"` or `make composer-require "PACKAGENAME --dev"`.
 
 ## Executing commands
 - Do now use `cd` for everything, you're already in the root!
-- Check `make help` for all available commands
-- Check `make help-contrib` for all available contrib commands
-- Need something custom that is not in the list? Use `make run "YOUR COMMAND HERE"` to run a command in the container and run whatever you require there
+- Check `make help` for all available commands.
+- Check `make help-contrib` for all available contrib commands.
+- Need something custom that is not in the list? Use `make run "YOUR COMMAND HERE"` to run a command in the container and run whatever you require there.
+- If a package needs custom `make` commands, put them in `etc/Makefile`, then run `make install` to make them available through the root `Makefile`.
 
 ## Flow
-- After each logical block of changes made ensure `make contrib` passes
-- Before you return to the uses run `make` to ensure all QA checks pass
-- Use `make unit-testing-filter TESTCLASSNAME_OR_TESTMETHODNAME` to run a specific test
-- Always add unit tests for new code
-- If `composer.lock` is out of sync with `composer.json`, run `make update`
+- After each logical block of changes made ensure `make contrib` passes.
+- Before you return to the uses run `make` to ensure all QA checks pass.
+- Use `make unit-testing-filter TESTCLASSNAME_OR_TESTMETHODNAME` to run a specific test.
+- Always add unit tests for new code.
+- If `composer.lock` is out of sync with `composer.json`, run `make update`.
 
 ## Writing code
 - Keep things simple, once done implementing a feature, iterate on improving it. Less code is more.
