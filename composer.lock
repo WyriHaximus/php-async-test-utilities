@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "168f2d03e464013092cbbfd40d4d0307",
+    "content-hash": "ecd320b1fc38f5a54aa2e5f146135c2c",
     "packages": [
         {
             "name": "azjezz/psl",
@@ -9363,27 +9363,30 @@
         },
         {
             "name": "wyrihaximus/phpstan-react",
-            "version": "2.0.0",
+            "version": "3.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/WyriHaximus/phpstan-reactphp.git",
-                "reference": "1b7464948b62b569e049d576da967bd980d7d2a9"
+                "reference": "076983ee8b90e38ec63e0b8f47f3e94996fa648b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/WyriHaximus/phpstan-reactphp/zipball/1b7464948b62b569e049d576da967bd980d7d2a9",
-                "reference": "1b7464948b62b569e049d576da967bd980d7d2a9",
+                "url": "https://api.github.com/repos/WyriHaximus/phpstan-reactphp/zipball/076983ee8b90e38ec63e0b8f47f3e94996fa648b",
+                "reference": "076983ee8b90e38ec63e0b8f47f3e94996fa648b",
                 "shasum": ""
             },
             "require": {
-                "php": "^8.3"
+                "nikic/php-parser": "^5.6.1",
+                "php": "^8.4"
             },
             "require-dev": {
-                "jawira/case-converter": "^3.5",
-                "nikic/php-parser": "^5.4.0",
-                "phpstan/phpdoc-parser": "^2.1.0",
-                "wyrihaximus/makefiles": "^0.3.0",
-                "wyrihaximus/test-utilities": "^7.0.0"
+                "jawira/case-converter": "^3.6",
+                "phpstan/phpdoc-parser": "^2.2.0",
+                "react/async": "^4.3",
+                "react/event-loop": "^1.6",
+                "react/promise": "^3.3",
+                "wyrihaximus/makefiles": "^0.15.1",
+                "wyrihaximus/test-utilities": "^14.4.0"
             },
             "type": "library",
             "extra": {
@@ -9405,7 +9408,7 @@
             "description": "👎 ReactPHP extension for PHPStan",
             "support": {
                 "issues": "https://github.com/WyriHaximus/phpstan-reactphp/issues",
-                "source": "https://github.com/WyriHaximus/phpstan-reactphp/tree/2.0.0"
+                "source": "https://github.com/WyriHaximus/phpstan-reactphp/tree/3.0.0"
             },
             "funding": [
                 {
@@ -9413,7 +9416,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2025-04-26T22:37:11+00:00"
+            "time": "2026-10-04T19:46:46+00:00"
         },
         {
             "name": "wyrihaximus/phpstan-rules-wrapper",
