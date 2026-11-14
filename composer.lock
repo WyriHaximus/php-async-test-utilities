@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "8930dff203617ab70e3e74e01efc4196",
+    "content-hash": "1dfe46a416e2a583e7c2297801bbde1a",
     "packages": [
         {
             "name": "azjezz/psl",
@@ -10097,16 +10097,16 @@
         },
         {
             "name": "wyrihaximus/makefiles",
-            "version": "0.15.5",
+            "version": "0.15.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/WyriHaximus/Makefiles.git",
-                "reference": "e8ae025777e6e95b0503d8cd060787a5c123b5c0"
+                "reference": "eb2158f92a8449769d46dc9f7e7e8a39b4093c0b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/WyriHaximus/Makefiles/zipball/e8ae025777e6e95b0503d8cd060787a5c123b5c0",
-                "reference": "e8ae025777e6e95b0503d8cd060787a5c123b5c0",
+                "url": "https://api.github.com/repos/WyriHaximus/Makefiles/zipball/eb2158f92a8449769d46dc9f7e7e8a39b4093c0b",
+                "reference": "eb2158f92a8449769d46dc9f7e7e8a39b4093c0b",
                 "shasum": ""
             },
             "require": {
@@ -10147,7 +10147,7 @@
             "description": "🧱 Makefile building blocks",
             "support": {
                 "issues": "https://github.com/WyriHaximus/Makefiles/issues",
-                "source": "https://github.com/WyriHaximus/Makefiles/tree/0.15.5"
+                "source": "https://github.com/WyriHaximus/Makefiles/tree/0.15.7"
             },
             "funding": [
                 {
@@ -10155,7 +10155,8 @@
                     "type": "github"
                 }
             ],
-            "time": "2026-11-02T19:25:48+00:00"
+            "time": "2026-11-14T22:13:09+00:00",
+            "published-time": "2026-11-14T22:13:52+00:00"
         }
     ],
     "aliases": [],
